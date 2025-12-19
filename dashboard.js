@@ -580,90 +580,108 @@ const contentData = {
     </div>`,
 
 
+
     
-    
-   'News': `
-    <div class="space-y-8 animate-in pb-20">
-        <div class="flex justify-between items-end">
+  'News': `
+    <div class="space-y-8 animate-in pb-20 px-2 md:px-0">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
             <div>
-                <h3 class="text-2xl md:text-3xl font-black italic uppercase tracking-tighter text-red-600">News Hub</h3>
-                <p class="text-gray-500 text-[10px] uppercase tracking-[0.2em] font-bold mt-1">Direct Feed: <span class="text-white">Admin TOGA // Authority Broadcast</span></p>
+                <h3 class="text-3xl font-black italic uppercase tracking-tighter text-white">News <span class="text-purple-500">Hub</span></h3>
+                <p class="text-gray-500 text-[10px] uppercase tracking-[0.2em] font-bold mt-1">Status: <span class="text-purple-400">Clinical Protocol // Authority Broadcast</span></p>
             </div>
-            <span class="hidden md:block text-[10px] text-gray-600 font-mono uppercase tracking-widest">Date: 18.12.2025</span>
+            <span class="text-[10px] text-gray-600 font-mono uppercase tracking-widest bg-white/5 px-3 py-1 rounded-full">Sync: 20.12.2025</span>
         </div>
 
-        <div class="relative rounded-[2rem] md:rounded-[3rem] overflow-hidden border border-red-600/20 bg-[#0a0a0a] group">
+        <div class="relative rounded-[2.5rem] md:rounded-[3.5rem] overflow-hidden border border-purple-500/20 bg-[#0a0a0c] group shadow-2xl">
             <div class="grid grid-cols-1 lg:grid-cols-2">
-                <div class="relative h-[250px] lg:h-full bg-zinc-900 overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent z-10"></div>
-                    <div class="absolute inset-0 flex items-center justify-center text-red-600/10 group-hover:scale-110 transition-transform duration-700">
-                         <i class="fas fa-edit text-9xl"></i>
+                <div class="relative h-[220px] lg:h-full bg-zinc-900 overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0c] via-transparent to-transparent z-10"></div>
+                    <div class="absolute inset-0 flex items-center justify-center text-purple-600/10 group-hover:scale-110 transition-transform duration-1000">
+                         <i class="fas fa-holly-berry text-9xl"></i>
                     </div>
                     <div class="absolute top-6 left-6 z-20 flex flex-col gap-2">
-                        <span class="px-4 py-1.5 bg-red-600 text-white text-[10px] font-black uppercase tracking-widest rounded-full shadow-lg">7 Slots Available</span>
-                        <span class="px-4 py-1.5 bg-yellow-500 text-black text-[10px] font-black uppercase tracking-widest rounded-full shadow-lg">Custom Naming Active</span>
+                        <span class="px-4 py-1.5 bg-purple-600 text-white text-[9px] font-black uppercase tracking-widest rounded-full shadow-lg animate-pulse">Merry Christmas</span>
+                        <span class="px-4 py-1.5 bg-white/10 backdrop-blur-md text-white text-[9px] font-black uppercase tracking-widest rounded-full border border-white/10">Resuming 2026</span>
                     </div>
                 </div>
 
-                <div class="p-8 md:p-10 flex flex-col justify-center">
-                    <span class="text-[10px] text-red-500 font-black uppercase mb-4 tracking-[0.3em]">Franchise Acquisition</span>
-                    <h4 class="text-2xl md:text-3xl font-black italic uppercase tracking-tighter text-white leading-none mb-6">
-                        Own a Team <br><span class="text-red-600 text-xl md:text-4xl">Name Your Legacy</span>
+                <div class="p-8 md:p-12 flex flex-col justify-center relative">
+                    <div class="absolute top-0 right-0 p-8 opacity-5">
+                        <i class="fas fa-tree text-6xl text-purple-500"></i>
+                    </div>
+                    <span class="text-[10px] text-purple-500 font-black uppercase mb-4 tracking-[0.3em]">Holiday Announcement</span>
+                    <h4 class="text-3xl md:text-4xl font-black italic uppercase tracking-tighter text-white leading-[0.9] mb-6">
+                        Clinical Recess <br><span class="text-purple-500">Season Continued</span>
                     </h4>
-                    <p class="text-gray-400 text-[11px] md:text-sm uppercase leading-relaxed font-bold tracking-wide mb-8">
-                        The ₦4,000 ownership fee grants you full control. <span class="text-white">When you purchase a team, you choose the name.</span> Define your brand, secure your slot, and lead your squad to the Glory Cup.
+                    <p class="text-gray-400 text-[12px] md:text-sm uppercase leading-relaxed font-bold tracking-wide mb-8">
+                        To all clinical units and medical personnel: Have a <span class="text-white">Merry Christmas and a powerful New Year</span>. The 2025/2026 campaign is only on a pause. We return stronger in January to conclude the protocol.
                     </p>
                     <div class="flex flex-col gap-4">
-                        <button onclick="updateView('Mikoko Payment')" class="w-full md:w-max px-8 py-4 bg-red-600 text-white text-[10px] font-black uppercase tracking-widest rounded-xl hover:bg-white hover:text-black transition-all">Claim & Name Your Team</button>
+                        <div class="w-full md:w-max px-8 py-4 bg-purple-600/10 border border-purple-500/30 text-purple-400 text-[10px] font-black uppercase tracking-widest rounded-2xl flex items-center gap-3">
+                            <i class="fas fa-calendar-check"></i> Resumption: January 2026
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="bg-white/[0.02] border border-white/5 rounded-[2.5rem] p-8 md:p-12 relative overflow-hidden">
-            <div class="absolute -right-10 -top-10 opacity-5">
-                <i class="fas fa-users text-[15rem]"></i>
+        <div class="bg-gradient-to-br from-indigo-900/20 to-purple-900/10 border border-purple-500/20 rounded-[2.5rem] p-8 md:p-12 relative overflow-hidden group">
+            <div class="absolute -right-10 -bottom-10 opacity-5 group-hover:rotate-12 transition-transform duration-700">
+                <i class="fas fa-handshake-angle text-[15rem]"></i>
             </div>
             <div class="relative z-10">
-                <span class="text-[10px] text-blue-500 font-black uppercase tracking-[0.4em]">Planning Committee</span>
-                <h4 class="text-2xl font-black italic text-white uppercase mt-2 mb-6">Official Oversight</h4>
-                <p class="text-gray-400 text-xs md:text-sm font-bold uppercase leading-relaxed mb-8 max-w-2xl">
-                    Administered by <span class="text-white font-black italic">TOGA, HASSAN, UGO, ONANA, ZUBBY, DIVINE (White Money), and DERRICK.</span> Decisions and announcements from this group are the only official sources of truth.
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="px-3 py-1 bg-blue-500/20 text-blue-400 text-[8px] font-black uppercase tracking-widest rounded-md border border-blue-500/20">Joint Operations</span>
+                    <span class="text-[10px] text-gray-500 font-black uppercase tracking-[0.4em]">Intelligence Report</span>
+                </div>
+                <h4 class="text-2xl md:text-3xl font-black italic text-white uppercase mt-2 mb-6 tracking-tighter">Provost vs <span class="text-purple-500">Elite League</span> Clash</h4>
+                <p class="text-gray-400 text-xs md:text-sm font-bold uppercase leading-relaxed mb-8 max-w-2xl italic">
+                    Conversations are currently undergoing between the <span class="text-white underline decoration-purple-500">Elite League Coordinators</span> and the Provost administration. A potential "Cross-Sector Clash" is being discussed. While still in the negotiation phase, this would be the ultimate test for clinical readiness.
                 </p>
-                <div class="flex flex-wrap gap-2">
-                    ${['TOGA', 'HASSAN', 'UGO', 'ONANA', 'ZUBBY', 'DIVINE', 'DERRICK'].map(name => `
-                        <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-lg text-[9px] text-gray-400 font-bold uppercase tracking-widest">${name}</span>
-                    `).join('')}
+                <div class="flex items-center gap-2">
+                    <div class="w-2 h-2 bg-yellow-500 rounded-full animate-pulse"></div>
+                    <span class="text-[9px] text-gray-500 font-bold uppercase tracking-widest">Status: Discussion in progress</span>
                 </div>
             </div>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="bg-white/[0.02] border border-white/10 rounded-[2rem] p-6 hover:border-red-600/30 transition-all group">
-                <div class="w-10 h-10 bg-red-600/10 rounded-xl flex items-center justify-center mb-6 border border-red-600/20">
-                    <i class="fas fa-receipt text-red-500 text-sm"></i>
+            <div class="bg-white/[0.02] border border-white/5 rounded-[2rem] p-8 hover:border-purple-600/30 transition-all group relative overflow-hidden">
+                <div class="w-12 h-12 bg-purple-600/10 rounded-2xl flex items-center justify-center mb-6 border border-purple-500/20">
+                    <i class="fas fa-user-shield text-purple-500 text-lg"></i>
                 </div>
-                <span class="text-[9px] text-red-500 font-black uppercase tracking-widest">Payment Security</span>
-                <h5 class="text-white font-black uppercase italic tracking-tighter text-lg mt-2 mb-3">Receipt Confirmation</h5>
-                <p class="text-gray-500 text-[10px] font-bold uppercase leading-relaxed mb-6">
-                    Mikoko League payment has officially begun. Use the transfer section on this site. <span class="text-white">After payment, send your receipt to TOGA's DM for validation.</span>
+                <span class="text-[9px] text-purple-500 font-black uppercase tracking-widest">Official Oversight</span>
+                <h5 class="text-white font-black uppercase italic tracking-tighter text-xl mt-2 mb-4">Planning Committee</h5>
+                <div class="flex flex-wrap gap-2 mb-6">
+                    ${['TOGA', 'HASSAN', 'UGO', 'ONANA', 'ZUBBY', 'DIVINE', 'DERRICK'].map(name => `
+                        <span class="px-2 py-1 bg-white/5 border border-white/10 rounded text-[8px] text-gray-500 font-bold uppercase tracking-tighter">${name}</span>
+                    `).join('')}
+                </div>
+                <p class="text-gray-500 text-[10px] font-bold uppercase leading-relaxed">
+                    Decisions and medical directives from this group remain the <span class="text-white">Only Official Source</span> for the Provost Cup sector.
                 </p>
-                <div class="pt-4 border-t border-white/5 text-[9px] text-gray-600 font-mono uppercase italic">Only Valid Channel: MIKOKO TERMINAL</div>
             </div>
 
-            <div class="bg-white/[0.02] border border-white/10 rounded-[2rem] p-6 hover:border-white/30 transition-all group">
-                <div class="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center mb-6 border border-white/20">
-                    <i class="fas fa-user-tie text-white text-sm"></i>
+            <div class="bg-white/[0.02] border border-white/5 rounded-[2rem] p-8 hover:border-purple-600/30 transition-all group relative overflow-hidden">
+                <div class="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center mb-6 border border-white/10">
+                    <i class="fas fa-credit-card text-white text-lg"></i>
                 </div>
-                <span class="text-[9px] text-gray-400 font-black uppercase tracking-widest">Manager Protocol</span>
-                <h5 class="text-white font-black uppercase italic tracking-tighter text-lg mt-2 mb-3">Franchise Slot Count</h5>
+                <span class="text-[9px] text-gray-400 font-black uppercase tracking-widest">Financial Sync</span>
+                <h5 class="text-white font-black uppercase italic tracking-tighter text-xl mt-2 mb-4">Registration Terminal</h5>
                 <p class="text-gray-500 text-[10px] font-bold uppercase leading-relaxed mb-6">
-                    1 Slot already claimed. 7 Remaining. Once all 8 franchises are sold, the ownership window closes. Secure your spot to participate in the upcoming Season 03.
+                    Franchise ownership (₦4,000) and Player registration (₦2,000) nodes remain active. Secure your slots now before the 2026 resumption.
                 </p>
-                <div class="pt-4 border-t border-white/5 text-[9px] text-gray-600 font-mono uppercase italic">Ownership: ₦4,000 // Player: ₦2,000</div>
+                <div class="pt-4 border-t border-white/5 flex justify-between items-center">
+                    <span class="text-[9px] text-gray-600 font-mono uppercase italic">Ref: Mikoko Terminal</span>
+                    <i class="fas fa-lock text-[10px] text-purple-900/40"></i>
+                </div>
             </div>
         </div>
     </div>`,
+
+
+
+    
     
    'Goals Leaderboard': `
 <div class="space-y-8 animate-in">
