@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #05020a;
+    letter-spacing: -0.02em;
+}
+
+/* Page Entry Animation */
+@keyframes slideUp {
+    from { 
+        opacity: 0; 
+        transform: translateY(60px); 
+        filter: blur(20px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+        filter: blur(0); 
+    }
+}
+
+.animate-slide-up {
+    animation: slideUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Faculty Card Glassmorphism */
+.faculty-card {
+    backdrop-filter: blur(20px);
+    background: linear-gradient(145deg, rgba(24, 24, 27, 0.4), rgba(9, 9, 11, 0.4));
+}
+
+.faculty-card:hover {
+    border-color: rgba(124, 58, 237, 0.4);
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 40px 100px -20px rgba(0, 0, 0, 0.8), 
+                0 0 40px rgba(124, 58, 237, 0.1);
+}
+
+/* Custom Text Stroke */
+.stroke-purple-500 {
+    -webkit-text-stroke: 2px #7c3aed;
+    color: transparent;
+}
+
+/* Mobile Smoothing */
+@media (max-width: 768px) {
+    h1 { 
+        font-size: 4rem !important; 
+        line-height: 0.9 !important;
+    }
+    .faculty-card { 
+        padding: 2.5rem !important; 
+        border-radius: 3rem !important; 
+    }
+    .faculty-card h2 {
+        font-size: 3rem !important;
+    }
+}
+
+/* Custom Scrollbar for the Medical Interface */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #05020a;
+}
+::-webkit-scrollbar-thumb {
+    background: #7c3aed33;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #7c3aed;
+}
+
+/* FIFA Headline Text Scaling */
+h4 {
+    font-size: 1.25rem;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+}
+
+/* Container Aspect Ratio for Mobile */
+@media (max-width: 768px) {
+    .aspect-video {
+        aspect-ratio: 16 / 10;
+    }
+}
+
+/* Card Hover Glows */
+.group:hover .aspect-video {
+    border-color: rgba(124, 58, 237, 0.3);
+    background: rgba(124, 58, 237, 0.05);
+}

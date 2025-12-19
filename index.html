@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Provost Cup | Dark Medical Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#05020a] text-white overflow-x-hidden">
+
+    <div class="fixed inset-0 pointer-events-none">
+        <div class="absolute top-[-15%] right-[-10%] w-[600px] h-[600px] bg-purple-600/10 rounded-full blur-[140px]"></div>
+        <div class="absolute bottom-[5%] left-[-5%] w-[400px] h-[400px] bg-indigo-600/10 rounded-full blur-[120px]"></div>
+        <div class="absolute inset-0 opacity-[0.05]" style="background-image: linear-gradient(#7c3aed 1px, transparent 1px), linear-gradient(90deg, #7c3aed 1px, transparent 1px); background-size: 50px 50px;"></div>
+    </div>
+
+    <main class="relative z-10 min-h-screen flex flex-col px-6 py-10 md:px-24 md:py-20 justify-center max-w-7xl mx-auto">
+        
+        <header class="mb-16 md:mb-24 animate-slide-up">
+            <div class="mb-12 flex justify-start">
+                <div class="relative p-1 bg-gradient-to-tr from-purple-600 to-indigo-400 rounded-full shadow-[0_0_30px_rgba(124,58,237,0.3)]">
+                    <div class="bg-[#05020a] rounded-full p-2">
+                        <img src="PROVOST.png" alt="Provost Logo" class="h-20 w-20 md:h-28 md:w-28 rounded-full object-cover brightness-110">
+                    </div>
+                    <div class="absolute inset-0 border-2 border-purple-500/30 rounded-full animate-ping"></div>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-4 mb-8">
+                <div class="px-4 py-1.5 bg-purple-600/10 border border-purple-500/20 rounded-full">
+                    <span class="text-[10px] font-black uppercase tracking-[0.4em] text-purple-400">Provost Protocol v2.0</span>
+                </div>
+                <div class="h-[1px] flex-grow bg-gradient-to-r from-purple-500/50 to-transparent"></div>
+            </div>
+            
+            <h1 class="text-7xl md:text-9xl font-black tracking-tighter text-white uppercase italic leading-[0.8] mb-10">
+                Provost <br><span class="text-transparent stroke-purple-500" style="-webkit-text-stroke: 2px #7c3aed;">Cup 2025</span>
+            </h1>
+            
+            <p class="text-gray-400 font-bold uppercase text-[12px] tracking-[0.2em] max-w-md leading-relaxed border-l-4 border-purple-600 pl-6 bg-purple-600/5 py-4 rounded-r-2xl">
+                The premier clinical arena for <span class="text-white">Medicine</span> & <span class="text-white">Nursing</span>. 
+                <br><span class="text-purple-500 text-[10px]">College of Health Sciences Authorization Required.</span>
+            </p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            
+            <div class="faculty-card group bg-zinc-900/20 border border-white/5 p-12 rounded-[4rem] relative overflow-hidden transition-all duration-700 cursor-pointer" onclick="enterFaculty('medicine')">
+                <div class="relative z-10">
+                    <div class="w-20 h-20 rounded-[2rem] bg-gradient-to-br from-purple-600 to-indigo-700 text-white flex items-center justify-center mb-12 group-hover:scale-110 transition-all duration-500 shadow-xl shadow-purple-600/20">
+                        <i class="fas fa-stethoscope text-3xl"></i>
+                    </div>
+                    <h2 class="text-5xl font-black italic uppercase tracking-tighter mb-4 text-white">Medicine</h2>
+                    <p class="text-[11px] font-bold text-gray-500 uppercase tracking-[0.2em] mb-12">Registry: 4 Departments Active</p>
+                    
+                   
+                </div>
+                <div class="absolute -inset-20 bg-purple-600/5 blur-[80px] opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                <i class="fas fa-staff-snake absolute -bottom-10 -right-10 text-white/[0.03] text-[14rem] rotate-12 transition-all group-hover:text-purple-500/10"></i>
+            </div>
+
+            <div class="faculty-card group bg-zinc-900/20 border border-white/5 p-12 rounded-[4rem] relative overflow-hidden transition-all duration-700 cursor-pointer" onclick="enterFaculty('nursing')">
+                <div class="relative z-10">
+                    <div class="w-20 h-20 rounded-[2rem] bg-gradient-to-br from-indigo-600 to-purple-700 text-white flex items-center justify-center mb-12 group-hover:scale-110 transition-all duration-500 shadow-xl shadow-indigo-600/20">
+                        <i class="fas fa-user-nurse text-3xl"></i>
+                    </div>
+                    <h2 class="text-5xl font-black italic uppercase tracking-tighter mb-4 text-white">Nursing</h2>
+                    <p class="text-[11px] font-bold text-gray-500 uppercase tracking-[0.2em] mb-12">Registry: 100L — 200L</p>
+                    
+                    
+                </div>
+                <div class="absolute -inset-20 bg-indigo-600/5 blur-[80px] opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                <i class="fas fa-heart-pulse absolute -bottom-10 -right-10 text-white/[0.03] text-[14rem] rotate-12 transition-all group-hover:text-indigo-500/10"></i>
+            </div>
+
+
+        </div>
+<section class="mt-20 md:mt-32 animate-slide-up" style="animation-delay: 0.2s;">
+    <div class="flex items-center gap-4 mb-10">
+        <h3 class="text-2xl font-black italic uppercase tracking-tighter">Live <span class="text-purple-500">Node Logs</span></h3>
+        <div class="h-[1px] flex-grow bg-white/5"></div>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-zinc-900/30 border border-white/5 p-6 rounded-3xl flex items-center gap-5">
+            <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse shadow-[0_0_10px_#22c55e]"></div>
+            <div>
+                <p class="text-[10px] font-black uppercase text-gray-500 tracking-widest">Fixture Status</p>
+                <p class="text-sm font-bold text-white uppercase italic">All Systems Nominal</p>
+            </div>
+        </div>
+        <div class="bg-zinc-900/30 border border-white/5 p-6 rounded-3xl flex items-center gap-5">
+            <div class="w-2 h-2 bg-purple-500 rounded-full animate-pulse shadow-[0_0_10px_#7c3aed]"></div>
+            <div>
+                <p class="text-[10px] font-black uppercase text-gray-500 tracking-widest">Registrations</p>
+                <p class="text-sm font-bold text-white uppercase italic">6 Units Synchronized</p>
+            </div>
+        </div>
+        <div class="bg-zinc-900/30 border border-white/5 p-6 rounded-3xl flex items-center gap-5">
+            <div class="w-2 h-2 bg-blue-500 rounded-full animate-pulse shadow-[0_0_10px_#3b82f6]"></div>
+            <div>
+                <p class="text-[10px] font-black uppercase text-gray-500 tracking-widest">Database</p>
+                <p class="text-sm font-bold text-white uppercase italic">Phase 01 Active</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="mt-28 mb-20 flex flex-col items-center animate-slide-up" style="animation-delay: 0.7s;">
+    <p class="text-[8px] font-black text-gray-600 uppercase tracking-[1em] mb-6">Authorize Global Sync</p>
+    
+    <button onclick="window.location.href='dashboard.html'" class="group relative bg-[#05020a] border border-purple-500/30 px-10 py-5 rounded-2xl overflow-hidden transition-all hover:border-purple-500 hover:shadow-[0_0_50px_rgba(124,58,237,0.2)]">
+        <div class="absolute inset-0 bg-purple-600/0 group-hover:bg-purple-600/5 transition-colors"></div>
+        
+        <div class="relative z-10 flex items-center gap-6">
+            <div class="flex flex-col items-start">
+                <span class="text-[9px] font-black text-purple-500 uppercase tracking-widest group-hover:text-white transition-colors">Command Center</span>
+                <span class="text-white font-black uppercase italic tracking-[0.2em] text-lg">Enter Dashboard</span>
+            </div>
+            <div class="w-12 h-12 rounded-xl bg-purple-600 text-white flex items-center justify-center shadow-lg group-hover:rotate-90 transition-transform duration-500">
+                <i class="fas fa-microchip"></i>
+            </div>
+        </div>
+    </button>
+</div>
+
+
+<section class="mt-20 md:mt-32 animate-slide-up" style="animation-delay: 0.4s;">
+    <div class="bg-gradient-to-r from-purple-900/20 to-transparent border border-purple-500/10 rounded-[3rem] p-10 md:p-16 relative overflow-hidden">
+        <div class="relative z-10">
+            <h3 class="text-4xl md:text-5xl font-black italic uppercase tracking-tighter mb-4 text-white">Personnel <br><span class="text-purple-500">Honor Roll</span></h3>
+            <p class="text-gray-400 text-[11px] font-bold uppercase tracking-widest max-w-sm mb-10">Recognizing the most efficient surgical strikers in the tournament.</p>
+            
+            <div class="flex -space-x-4 mb-10">
+                <div class="w-14 h-14 rounded-full border-4 border-[#05020a] bg-zinc-800 flex items-center justify-center text-purple-400"><i class="fas fa-user-md"></i></div>
+                <div class="w-14 h-14 rounded-full border-4 border-[#05020a] bg-zinc-800 flex items-center justify-center text-purple-400"><i class="fas fa-user-nurse"></i></div>
+                <div class="w-14 h-14 rounded-full border-4 border-[#05020a] bg-zinc-800 flex items-center justify-center text-purple-400"><i class="fas fa-stethoscope"></i></div>
+                <div class="w-14 h-14 rounded-full border-4 border-[#05020a] bg-purple-600 flex items-center justify-center text-white font-black text-xs">+12</div>
+            </div>
+        </div>
+        <i class="fas fa-dna absolute -bottom-10 right-10 text-white/[0.02] text-[15rem] rotate-45"></i>
+    </div>
+</section>
+
+<section class="mt-20 md:mt-32 animate-slide-up" style="animation-delay: 0.5s;">
+    <div class="flex items-center justify-between mb-10">
+        <h3 class="text-2xl font-black italic uppercase tracking-tighter">Clinical <span class="text-purple-500">Fixtures</span></h3>
+        <span class="text-[9px] font-black uppercase text-purple-400 bg-purple-500/10 px-3 py-1 rounded-full border border-purple-500/20">Upcoming</span>
+    </div>
+
+    <div class="space-y-4">
+        <div class="group bg-zinc-900/30 border border-white/5 p-6 rounded-[2rem] flex flex-col md:flex-row items-center justify-between gap-6 transition-all hover:bg-purple-600/5 hover:border-purple-500/20">
+            <div class="flex items-center gap-6 w-full md:w-auto justify-between md:justify-start">
+                <div class="text-center">
+                    <p class="text-white font-black italic text-lg uppercase tracking-tighter">MED_100L</p>
+                    <p class="text-[9px] text-gray-500 font-bold uppercase tracking-widest">Home Unit</p>
+                </div>
+                <div class="px-4 py-2 bg-zinc-800 rounded-xl text-purple-500 font-black italic">VS</div>
+                <div class="text-center">
+                    <p class="text-white font-black italic text-lg uppercase tracking-tighter">NUR_200L</p>
+                    <p class="text-[9px] text-gray-500 font-bold uppercase tracking-widest">Away Unit</p>
+                </div>
+            </div>
+
+            <div class="h-[1px] w-full md:w-24 bg-white/5"></div>
+
+            <div class="flex items-center gap-8 w-full md:w-auto justify-center">
+                <div class="text-center">
+                    <p class="text-purple-400 font-black text-xs tracking-widest uppercase">00:00 HRS</p>
+                    <p class="text-[9px] text-gray-600 font-bold uppercase tracking-tighter">NIL, 2026</p>
+                </div>
+                <div class="w-[2px] h-8 bg-purple-500/20"></div>
+                <div class="text-left">
+                    <p class="text-white font-black text-[10px] uppercase tracking-widest">Main Field</p>
+                    <p class="text-purple-600 text-[8px] font-black animate-pulse uppercase">Live Prep</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="group bg-zinc-900/30 border border-white/5 p-6 rounded-[2rem] flex flex-col md:flex-row items-center justify-between gap-6 transition-all hover:bg-purple-600/5 hover:border-purple-500/20">
+            <div class="flex items-center gap-6 w-full md:w-auto justify-between md:justify-start">
+                <div class="text-center">
+                    <p class="text-white font-black italic text-lg uppercase tracking-tighter">MED_400L</p>
+                    <p class="text-[9px] text-gray-500 font-bold uppercase tracking-widest">Home Unit</p>
+                </div>
+                <div class="px-4 py-2 bg-zinc-800 rounded-xl text-purple-500 font-black italic">VS</div>
+                <div class="text-center">
+                    <p class="text-white font-black italic text-lg uppercase tracking-tighter">MED_200L</p>
+                    <p class="text-[9px] text-gray-500 font-bold uppercase tracking-widest">Away Unit</p>
+                </div>
+            </div>
+
+            <div class="h-[1px] w-full md:w-24 bg-white/5"></div>
+
+            <div class="flex items-center gap-8 w-full md:w-auto justify-center">
+                <div class="text-center">
+                    <p class="text-purple-400 font-black text-xs tracking-widest uppercase">00:00 HRS</p>
+                    <p class="text-[9px] text-gray-600 font-bold uppercase tracking-tighter">NIL, 2026</p>
+                </div>
+                <div class="w-[2px] h-8 bg-purple-500/20"></div>
+                <div class="text-left">
+                    <p class="text-white font-black text-[10px] uppercase tracking-widest">Main Field</p>
+                    <p class="text-purple-600 text-[8px] font-black uppercase">Standby</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="mt-20 md:mt-32 animate-slide-up" style="animation-delay: 0.6s;">
+    <div class="flex items-center gap-3 mb-10">
+        <div class="w-2 h-8 bg-purple-600 rounded-full"></div>
+        <h3 class="text-2xl font-black italic uppercase tracking-tighter text-white">Latest <span class="text-purple-500">Bulletins</span></h3>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="group cursor-pointer">
+            <div class="relative aspect-video mb-6 overflow-hidden rounded-[2rem] bg-zinc-900 border border-white/5 flex items-center justify-center">
+                <i class="fas fa-fire-flame-curved text-6xl text-purple-600 group-hover:scale-125 transition-transform duration-700 shadow-[0_0_50px_rgba(124,58,237,0.3)]"></i>
+                <div class="absolute bottom-4 left-4">
+                    <span class="bg-purple-600 text-[8px] font-black uppercase px-3 py-1 rounded-full tracking-widest">Hot Report</span>
+                </div>
+            </div>
+            <h4 class="text-xl font-black italic uppercase tracking-tighter leading-tight group-hover:text-purple-400 transition-colors">
+                Surgical Precision: Austin (NUR 200) Named Hottest Striker in the Sector.
+            </h4>
+        </div>
+
+        <div class="group cursor-pointer">
+            <div class="relative aspect-video mb-6 overflow-hidden rounded-[2rem] bg-zinc-900 border border-white/5 flex items-center justify-center">
+                <i class="fas fa-ranking-star text-6xl text-blue-500 group-hover:rotate-12 transition-transform duration-700 shadow-[0_0_50px_rgba(59,130,246,0.3)]"></i>
+                <div class="absolute bottom-4 left-4">
+                    <span class="bg-blue-600 text-[8px] font-black uppercase px-3 py-1 rounded-full tracking-widest">Table Update</span>
+                </div>
+            </div>
+            <h4 class="text-xl font-black italic uppercase tracking-tighter leading-tight group-hover:text-blue-400 transition-colors">
+                Dominance Maintained: MED 200 Secure Top Position in Global Standings.
+            </h4>
+        </div>
+
+        <div class="group cursor-pointer">
+            <div class="relative aspect-video mb-6 overflow-hidden rounded-[2rem] bg-zinc-900 border border-white/5 flex items-center justify-center">
+                <i class="fas fa-chart-line text-6xl text-emerald-500 group-hover:-translate-y-3 transition-transform duration-700 shadow-[0_0_50px_rgba(16,185,129,0.3)]"></i>
+                <div class="absolute bottom-4 left-4">
+                    <span class="bg-emerald-600 text-[8px] font-black uppercase px-3 py-1 rounded-full tracking-widest">Future Forecast</span>
+                </div>
+            </div>
+            <h4 class="text-xl font-black italic uppercase tracking-tighter leading-tight group-hover:text-emerald-400 transition-colors">
+                System Evolution: Provost Cup Strength Projected to Grow Over Time.
+            </h4>
+        </div>
+
+    </div>
+</section>
+
+<section class="mt-20 md:mt-32 animate-slide-up" style="animation-delay: 0.8s;">
+    <div class="flex flex-col gap-2 mb-10">
+        <div class="flex items-center gap-3">
+            <div class="w-2 h-8 bg-purple-600 rounded-full shadow-[0_0_15px_rgba(124,58,237,0.5)]"></div>
+            <h3 class="text-3xl font-black italic uppercase tracking-tighter text-white">System <span class="text-purple-500">Architecture</span></h3>
+        </div>
+        <p class="text-gray-500 text-[10px] font-bold uppercase tracking-[0.2em] pl-5">Decoding the League Ecosystem</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+        
+        <div class="relative group p-8 rounded-[3rem] bg-[#0a0a0c] border border-blue-500/10 hover:border-blue-500/40 transition-all duration-500">
+            <div class="flex justify-between items-start mb-6">
+                <h4 class="text-blue-500 font-black italic uppercase tracking-widest text-[10px]">Elite Protocol</h4>
+                <span class="text-[8px] px-2 py-1 bg-blue-500/10 text-blue-400 rounded-md font-bold uppercase border border-blue-500/20">Tier 01</span>
+            </div>
+            
+            <div class="space-y-6">
+                <div class="relative pl-4 border-l border-blue-500/30">
+                    <h5 class="text-white font-black uppercase text-sm italic">Elite League</h5>
+                    <p class="text-[10px] text-gray-400 uppercase leading-relaxed mt-1">Founded by Zuby. The top-tier competitive circuit for established pros.</p>
+                    <p class="text-[9px] text-blue-500 font-black uppercase mt-2 opacity-60 italic underline">Currently Offline: Awaiting Elite Readiness</p>
+                </div>
+                <div class="relative pl-4 border-l border-blue-500/30">
+                    <h5 class="text-white font-black uppercase text-sm italic">Elite Cup</h5>
+                    <p class="text-[10px] text-gray-400 uppercase leading-relaxed mt-1">High-stakes knockout format. Pinning functions restricted for current phase.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative group p-8 rounded-[3rem] bg-[#0a0a0c] border border-red-500/10 hover:border-red-500/40 transition-all duration-500">
+            <div class="flex justify-between items-start mb-6">
+                <h4 class="text-red-500 font-black italic uppercase tracking-widest text-[10px]">Mikoko Protocol</h4>
+                <span class="text-[8px] px-2 py-1 bg-red-500/10 text-red-400 rounded-md font-bold uppercase border border-red-500/20">Foundational</span>
+            </div>
+
+            <div class="space-y-6">
+                <div class="relative pl-4 border-l border-red-500/30">
+                    <h5 class="text-white font-black uppercase text-sm italic">Mikoko League</h5>
+                    <p class="text-[10px] text-gray-400 uppercase leading-relaxed mt-1">The grass-roots departmental league for internal team growth.</p>
+                </div>
+                <div class="relative pl-4 border-l border-red-500/30">
+                    <h5 class="text-white font-black uppercase text-sm italic">Mikoko Glory Cup</h5>
+                    <p class="text-[10px] text-gray-400 uppercase leading-relaxed mt-1">Specialized trophy hunt for departmental honor and rankings.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative group p-8 rounded-[3rem] bg-purple-900/5 border border-purple-500/20 hover:border-purple-500/60 transition-all duration-500 shadow-[0_0_30px_rgba(124,58,237,0.05)]">
+            <div class="flex justify-between items-start mb-6">
+                <h4 class="text-purple-500 font-black italic uppercase tracking-widest text-[10px]">Provost & Hybrid</h4>
+                <span class="text-[8px] px-2 py-1 bg-purple-500/20 text-purple-300 rounded-md font-bold uppercase border border-purple-500/40">Clinical</span>
+            </div>
+
+            <div class="space-y-6">
+                <div class="relative pl-4 border-l border-purple-500/50">
+                    <h5 class="text-white font-black uppercase text-sm italic">Provost Cup</h5>
+                    <p class="text-[10px] text-gray-400 uppercase leading-relaxed mt-1">Medicine & Nursing Sciences only. 100L, 200L, and 4 Med Units.</p>
+                </div>
+                <div class="relative pl-4 border-l border-purple-500/50">
+                    <h5 class="text-white font-black uppercase text-sm italic">Elite Mikoko Cup</h5>
+                    <p class="text-[10px] text-gray-400 uppercase leading-relaxed mt-1">The ultimate "Super Cup"—where the top of all leagues collide.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+</section>
+<footer class="mt-32 pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-10">
+    <div class="flex flex-col gap-2">
+        <span class="text-[10px] font-black uppercase tracking-[1em] text-gray-700">Provost_League_System</span>
+        <div class="flex items-center gap-3">
+            <span class="text-[8px] font-bold text-purple-600/50 uppercase tracking-widest">College of Health Sciences // 2025</span>
+            <div class="w-1 h-1 bg-zinc-800 rounded-full"></div>
+            <span class="text-[8px] font-black text-gray-500 uppercase tracking-tighter">Powered by <span class="text-purple-400">Tech Nxxt COMPANY</span></span>
+        </div>
+    </div>
+    
+    <div class="group flex items-center gap-6 px-8 py-4 bg-purple-600/5 rounded-3xl border border-purple-500/10 transition-all hover:bg-purple-600/10">
+        <div class="relative">
+            <div class="w-3 h-3 bg-purple-500 rounded-full animate-pulse shadow-[0_0_15px_#7c3aed]"></div>
+            <div class="absolute inset-0 w-3 h-3 bg-purple-400 rounded-full animate-ping opacity-20"></div>
+        </div>
+        <div class="flex flex-col">
+            <span class="text-[10px] font-black uppercase tracking-widest text-purple-400 leading-none">All Nodes Secure</span>
+            <span class="text-[7px] font-bold text-gray-600 uppercase tracking-tighter mt-1">Surgical Sync Active</span>
+        </div>
+    </div>
+</footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
