@@ -580,7 +580,7 @@ const contentData = {
     </div>`,
 
 
-
+    
     
   'News': `
     <div class="space-y-8 animate-in pb-20 px-2 md:px-0">
@@ -648,37 +648,34 @@ const contentData = {
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="bg-white/[0.02] border border-white/5 rounded-[2rem] p-8 hover:border-purple-600/30 transition-all group relative overflow-hidden">
                 <div class="w-12 h-12 bg-purple-600/10 rounded-2xl flex items-center justify-center mb-6 border border-purple-500/20">
-                    <i class="fas fa-user-shield text-purple-500 text-lg"></i>
+                    <i class="fas fa-crosshairs text-purple-500 text-lg"></i>
                 </div>
-                <span class="text-[9px] text-purple-500 font-black uppercase tracking-widest">Official Oversight</span>
-                <h5 class="text-white font-black uppercase italic tracking-tighter text-xl mt-2 mb-4">Planning Committee</h5>
-                <div class="flex flex-wrap gap-2 mb-6">
-                    ${['TOGA', 'HASSAN', 'UGO', 'ONANA', 'ZUBBY', 'DIVINE', 'DERRICK'].map(name => `
-                        <span class="px-2 py-1 bg-white/5 border border-white/10 rounded text-[8px] text-gray-500 font-bold uppercase tracking-tighter">${name}</span>
-                    `).join('')}
-                </div>
-                <p class="text-gray-500 text-[10px] font-bold uppercase leading-relaxed">
-                    Decisions and medical directives from this group remain the <span class="text-white">Only Official Source</span> for the Provost Cup sector.
+                <span class="text-[9px] text-purple-500 font-black uppercase tracking-widest">Clinical Scorer</span>
+                <h5 class="text-white font-black uppercase italic tracking-tighter text-xl mt-2 mb-4">Target Striker: Austin</h5>
+                <p class="text-gray-500 text-[10px] font-bold uppercase leading-relaxed mb-6">
+                    Scouts and analysts have identified <span class="text-white">Austin (NUR-200)</span> as the primary target striker for the upcoming phase. His surgical precision in front of goal makes him the unit to watch in the 2026 resumption.
                 </p>
+                <div class="pt-4 border-t border-white/5 flex justify-between items-center">
+                    <span class="text-[9px] text-gray-600 font-mono uppercase italic">Unit: NUR-200 // Surgical Lead</span>
+                </div>
             </div>
 
             <div class="bg-white/[0.02] border border-white/5 rounded-[2rem] p-8 hover:border-purple-600/30 transition-all group relative overflow-hidden">
                 <div class="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center mb-6 border border-white/10">
-                    <i class="fas fa-credit-card text-white text-lg"></i>
+                    <i class="fas fa-user-shield text-white text-lg"></i>
                 </div>
-                <span class="text-[9px] text-gray-400 font-black uppercase tracking-widest">Financial Sync</span>
-                <h5 class="text-white font-black uppercase italic tracking-tighter text-xl mt-2 mb-4">Registration Terminal</h5>
+                <span class="text-[9px] text-gray-400 font-black uppercase tracking-widest">Official Oversight</span>
+                <h5 class="text-white font-black uppercase italic tracking-tighter text-xl mt-2 mb-4">Provost Coordinators</h5>
                 <p class="text-gray-500 text-[10px] font-bold uppercase leading-relaxed mb-6">
-                    Franchise ownership (₦4,000) and Player registration (₦2,000) nodes remain active. Secure your slots now before the 2026 resumption.
+                    The Planning Committee is officially led by the <span class="text-white">Provost Coordinators</span>. All directives regarding the 2025/2026 season continuation are managed by this body.
                 </p>
                 <div class="pt-4 border-t border-white/5 flex justify-between items-center">
-                    <span class="text-[9px] text-gray-600 font-mono uppercase italic">Ref: Mikoko Terminal</span>
+                    <span class="text-[9px] text-gray-600 font-mono uppercase italic">Names Awaiting Confirmation</span>
                     <i class="fas fa-lock text-[10px] text-purple-900/40"></i>
                 </div>
             </div>
         </div>
     </div>`,
-
 
 
     
