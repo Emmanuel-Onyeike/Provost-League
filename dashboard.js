@@ -678,163 +678,205 @@ const contentData = {
     </div>`,
 
 
-    
-    
-   'Goals Leaderboard': `
-<div class="space-y-8 animate-in">
+
+  'Goals Leaderboard': `
+<div class="space-y-8 animate-in pb-10">
     <div class="flex flex-col lg:flex-row gap-8">
         
         <div class="lg:w-1/3">
-            <div class="relative group overflow-hidden bg-gradient-to-br from-red-600/20 to-transparent border border-white/10 rounded-[2.5rem] p-8 flex flex-col items-center text-center sticky top-8">
-                <div class="absolute top-6 left-6 px-4 py-1 bg-red-600 text-[10px] font-black uppercase tracking-widest rounded-full shadow-lg shadow-red-600/20">
-                    Player of the Week
+            <div class="relative group overflow-hidden bg-[#0a0a0c] border border-purple-500/20 rounded-[2.5rem] p-8 flex flex-col items-center text-center sticky top-8 shadow-2xl">
+                <div class="absolute -top-24 -left-24 w-48 h-48 bg-purple-600/10 rounded-full blur-[80px]"></div>
+                
+                <div class="absolute top-6 left-1/2 -translate-x-1/2 px-4 py-1.5 bg-purple-600 text-white text-[9px] font-black uppercase tracking-[0.2em] rounded-full shadow-lg border border-purple-400/30 whitespace-nowrap">
+                    Lead Surgical Striker
                 </div>
                 
-                <div class="w-40 h-40 md:w-48 md:h-48 bg-zinc-900 rounded-full mb-6 border-4 border-red-500/30 overflow-hidden relative shadow-2xl">
-                    <div class="absolute inset-0 flex items-center justify-center text-gray-700 italic">
-                        <i class="fas fa-user-ninja text-6xl"></i>
+                <div class="mt-8 w-40 h-40 md:w-48 md:h-48 bg-zinc-900 rounded-[3rem] mb-6 border-2 border-purple-500/20 overflow-hidden relative shadow-2xl rotate-3 group-hover:rotate-0 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-purple-900/40 to-transparent z-10"></div>
+                    <div class="absolute inset-0 flex items-center justify-center text-purple-500/20">
+                        <i class="fas fa-user-md text-7xl"></i>
                     </div>
                 </div>
 
-                <h3 class="text-3xl font-black text-white uppercase tracking-tighter italic leading-tight">NIL <span class="text-red-500">NIL</span></h3>
-                <p class="text-gray-400 font-bold uppercase text-[10px] tracking-[0.2em] mt-2 italic">Awaiting Selection // Striker</p>
+                <h3 class="text-3xl font-black text-white uppercase tracking-tighter italic leading-tight">NIL <span class="text-purple-500 underline decoration-white/10">NIL</span></h3>
+                <p class="text-gray-500 font-bold uppercase text-[10px] tracking-[0.3em] mt-3 italic">Clinical Target // Primary Node</p>
                 
-                <div class="flex gap-4 md:gap-8 mt-8 w-full justify-center">
-                    <div class="text-center">
-                        <span class="block text-2xl font-black text-white">0</span>
-                        <span class="text-[9px] text-gray-500 uppercase font-black tracking-widest">Goals</span>
+                <div class="flex gap-4 mt-8 w-full justify-center">
+                    <div class="flex-1 bg-white/5 p-3 rounded-2xl border border-white/5">
+                        <span class="block text-xl font-black text-white">--</span>
+                        <span class="text-[8px] text-purple-500 uppercase font-black tracking-widest">Goals</span>
                     </div>
-                    <div class="text-center border-x border-white/10 px-4 md:px-8">
-                        <span class="block text-2xl font-black text-white">0</span>
-                        <span class="text-[9px] text-gray-500 uppercase font-black tracking-widest">Assists</span>
-                    </div>
-                    <div class="text-center">
-                        <span class="block text-2xl font-black text-white">0</span>
-                        <span class="text-[9px] text-gray-500 uppercase font-black tracking-widest">MVP</span>
+                    <div class="flex-1 bg-white/5 p-3 rounded-2xl border border-white/5">
+                        <span class="block text-xl font-black text-white">--</span>
+                        <span class="text-[8px] text-purple-500 uppercase font-black tracking-widest">Assists</span>
                     </div>
                 </div>
                 
-                <div class="mt-8 w-full pt-6 border-t border-white/5">
-                    <span class="text-[9px] text-gray-600 font-mono uppercase">Node Status: STANDBY</span>
+                <div class="mt-8 w-full pt-6 border-t border-white/5 flex items-center justify-between">
+                    <span class="text-[9px] text-gray-600 font-mono uppercase italic">Ready: 2026 Phase</span>
+                    <i class="fas fa-check-circle text-purple-500 text-[10px]"></i>
                 </div>
             </div>
         </div>
 
-        <div class="lg:w-2/3 bg-[#0a0a0a] border border-white/10 rounded-[2.5rem] p-8 flex flex-col">
-            <h3 class="text-xl font-black text-white mb-8 uppercase italic tracking-tighter flex items-center">
-                <i class="fas fa-fire text-red-600 mr-3 animate-pulse"></i> Top Scorers
-            </h3>
+        <div class="lg:w-2/3 bg-[#0a0a0c] border border-white/5 rounded-[2.5rem] p-6 md:p-10 flex flex-col shadow-2xl relative overflow-hidden">
+            <i class="fas fa-dna absolute -right-10 -top-10 text-[12rem] text-white/[0.02] -rotate-12"></i>
+
+            <div class="flex justify-between items-center mb-10 relative z-10">
+                <h3 class="text-2xl font-black text-white uppercase italic tracking-tighter flex items-center">
+                    <i class="fas fa-vials text-purple-500 mr-4"></i> Goal <span class="text-purple-500 ml-2">Registry</span>
+                </h3>
+                <span class="text-[9px] text-gray-500 font-black uppercase tracking-widest bg-white/5 px-3 py-1 rounded-lg">Top 07</span>
+            </div>
             
-            <div class="space-y-3" id="goalsListContainer">
-                <div class="flex text-[9px] uppercase font-black text-gray-600 px-4 mb-2 tracking-[0.2em]">
-                    <div class="w-12 text-center">Pos</div>
-                    <div class="flex-grow">Player Identification</div>
-                    <div class="w-12 text-right">G</div>
+            <div class="space-y-3 relative z-10" id="goalsListContainer">
+                <div class="flex text-[9px] uppercase font-black text-gray-600 px-5 mb-4 tracking-[0.2em]">
+                    <div class="w-10">RNK</div>
+                    <div class="flex-grow">Personnel Node / Unit</div>
+                    <div class="w-10 text-right">PAYL</div>
                 </div>
 
-                ${[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(i => `
-                    <div class="flex items-center p-4 bg-white/[0.03] rounded-[1.5rem] border border-white/5 group hover:border-red-600/30 transition-all ${i > 6 ? 'hidden extra-players animate-in' : ''}">
-                        <div class="w-12 font-black italic text-sm ${i <= 3 ? 'text-red-600' : 'text-gray-600'} text-center">${i < 10 ? '0' + i : i}</div>
+                ${[1, 2, 3, 4, 5, 6, 7].map(i => `
+                    <div class="flex items-center p-5 bg-white/[0.02] rounded-[1.5rem] border border-white/5 group hover:border-purple-500/40 hover:bg-purple-600/[0.03] transition-all duration-300">
+                        <div class="w-10 font-black italic text-base ${i === 1 ? 'text-purple-500' : 'text-gray-700'} group-hover:text-purple-400 transition-colors">
+                            0${i}
+                        </div>
+                        
                         <div class="flex-grow flex items-center space-x-4 px-2">
-                            <div class="w-8 h-8 rounded-full bg-zinc-800 border border-white/10 flex items-center justify-center relative">
-                                <i class="fas fa-user text-[10px] text-gray-600"></i>
-                                ${i <= 5 ? '<i class="fas fa-star absolute -top-1 -right-1 text-[8px] text-yellow-500 animate-pulse"></i>' : ''}
+                            <div class="w-10 h-10 rounded-xl bg-purple-600/5 border border-purple-500/10 flex items-center justify-center relative group-hover:scale-110 transition-transform">
+                                <i class="fas fa-user-md text-[12px] text-purple-500/40"></i>
+                                ${i === 1 ? '<span class="absolute -top-1 -right-1 w-2 h-2 bg-purple-500 rounded-full animate-ping"></span>' : ''}
                             </div>
                             <div class="flex flex-col">
-                                <span class="text-xs font-black text-white uppercase tracking-tighter group-hover:text-red-600 transition-colors">Pending_Roster</span>
-                                <span class="text-[8px] text-gray-600 font-bold uppercase tracking-widest italic">Awaiting Assignment</span>
+                                <span class="text-sm font-black text-white uppercase tracking-tighter group-hover:text-purple-400 transition-colors italic">
+                                    ${i === 1 ? 'Awaiting_Sync' : 'Awaiting_Sync'}
+                                </span>
+                                <span class="text-[9px] text-gray-600 font-black uppercase tracking-widest">
+                                    ${i === 1 ? 'Unit Protocol' : 'Unit Protocol'}
+                                </span>
                             </div>
                         </div>
-                        <div class="w-12 text-right font-black italic text-white group-hover:scale-125 transition-transform">0</div>
+
+                        <div class="w-10 text-right font-black italic text-lg text-white group-hover:text-purple-500 transition-colors leading-none">
+                            --
+                        </div>
                     </div>
                 `).join('')}
             </div>
 
-            <button id="toggleGoalsBtn" onclick="toggleFullLeaderboard()" class="w-full mt-6 py-4 bg-white/5 border border-white/10 rounded-2xl text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 hover:text-white hover:bg-white/10 transition-all">
-                View Full Player Stats (Top 10)
-            </button>
+            <div class="mt-8 p-6 bg-purple-600/5 border border-purple-500/10 rounded-3xl">
+                <p class="text-[10px] text-gray-500 uppercase font-bold text-center leading-relaxed tracking-widest">
+                    The registry is currently <span class="text-purple-400">Locked for Calibration</span>. 
+                    Stats will populate following the January 2026 resumption.
+                </p>
+            </div>
         </div>
 
     </div>
 </div>`,
 
-  'Assists Leaderboard': `
-<div class="space-y-8 animate-in">
+
+
+'Assists Leaderboard': `
+<div class="space-y-8 animate-in pb-10">
     <div class="flex flex-col lg:flex-row gap-8">
         
         <div class="lg:w-1/3">
-            <div class="relative group overflow-hidden bg-gradient-to-br from-blue-600/20 to-transparent border border-white/10 rounded-[2.5rem] p-8 flex flex-col items-center text-center sticky top-8">
-                <div class="absolute top-6 left-6 px-4 py-1 bg-blue-600 text-[10px] font-black uppercase tracking-widest rounded-full shadow-lg shadow-blue-600/20">
-                    Playmaker of the Week
+            <div class="relative group overflow-hidden bg-[#0a0a0c] border border-blue-500/20 rounded-[2.5rem] p-8 flex flex-col items-center text-center sticky top-8 shadow-2xl">
+                <div class="absolute -bottom-24 -right-24 w-48 h-48 bg-blue-600/10 rounded-full blur-[80px]"></div>
+                
+                <div class="absolute top-6 left-1/2 -translate-x-1/2 px-4 py-1.5 bg-blue-600 text-white text-[9px] font-black uppercase tracking-[0.2em] rounded-full shadow-lg border border-blue-400/30 whitespace-nowrap">
+                    Lead Creative Node
                 </div>
                 
-                <div class="w-40 h-40 md:w-48 md:h-48 bg-zinc-900 rounded-full mb-6 border-4 border-blue-500/30 overflow-hidden relative shadow-2xl">
-                    <div class="absolute inset-0 flex items-center justify-center text-gray-700 italic">
-                        <i class="fas fa-magic-wand-sparkles text-6xl"></i>
+                <div class="mt-8 w-40 h-40 md:w-48 md:h-48 bg-zinc-900 rounded-[3rem] mb-6 border-2 border-blue-500/20 overflow-hidden relative shadow-2xl group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-900/40 to-transparent z-10"></div>
+                    <div class="absolute inset-0 flex items-center justify-center text-blue-500/20">
+                        <i class="fas fa-brain text-7xl animate-pulse"></i>
                     </div>
                 </div>
 
-                <h3 class="text-3xl font-black text-white uppercase tracking-tighter italic leading-tight">NIL <span class="text-blue-500">NIL</span></h3>
-                <p class="text-gray-400 font-bold uppercase text-[10px] tracking-[0.2em] mt-2 italic">Awaiting Selection // Midfield Node</p>
+                <h3 class="text-3xl font-black text-white uppercase tracking-tighter italic leading-tight">NODE <span class="text-blue-500 italic">P_00</span></h3>
+                <p class="text-gray-500 font-bold uppercase text-[10px] tracking-[0.3em] mt-3 italic">Clinical Vision // Midfield</p>
                 
-                <div class="flex gap-4 md:gap-8 mt-8 w-full justify-center">
-                    <div class="text-center">
-                        <span class="block text-2xl font-black text-white">0</span>
-                        <span class="text-[9px] text-gray-500 uppercase font-black tracking-widest">Assists</span>
+                <div class="flex gap-4 mt-8 w-full justify-center">
+                    <div class="flex-1 bg-white/5 p-4 rounded-2xl border border-white/5">
+                        <span class="block text-xl font-black text-white">--</span>
+                        <span class="text-[8px] text-blue-500 uppercase font-black tracking-widest">Assists</span>
                     </div>
-                    <div class="text-center border-x border-white/10 px-4 md:px-8">
-                        <span class="block text-2xl font-black text-white">0</span>
-                        <span class="text-[9px] text-gray-500 uppercase font-black tracking-widest">Key Passes</span>
-                    </div>
-                    <div class="text-center">
-                        <span class="block text-2xl font-black text-white">0</span>
-                        <span class="text-[9px] text-gray-500 uppercase font-black tracking-widest">MVP</span>
+                    <div class="flex-1 bg-white/5 p-4 rounded-2xl border border-white/5">
+                        <span class="block text-xl font-black text-white">--</span>
+                        <span class="text-[8px] text-blue-500 uppercase font-black tracking-widest">Syncs</span>
                     </div>
                 </div>
                 
                 <div class="mt-8 w-full pt-6 border-t border-white/5">
-                    <span class="text-[9px] text-gray-600 font-mono uppercase">Vision Status: ANALYZING</span>
+                    <span class="text-[9px] text-gray-700 font-mono uppercase tracking-widest">Vision Status: Analyzing...</span>
                 </div>
             </div>
         </div>
 
-        <div class="lg:w-2/3 bg-[#0a0a0a] border border-white/10 rounded-[2.5rem] p-8 flex flex-col">
-            <h3 class="text-xl font-black text-white mb-8 uppercase italic tracking-tighter flex items-center">
-                <i class="fas fa-wand-magic-sparkles text-blue-500 mr-3 animate-pulse"></i> Playmaker Rankings
-            </h3>
+        <div class="lg:w-2/3 bg-[#0a0a0c] border border-white/5 rounded-[2.5rem] p-6 md:p-10 flex flex-col shadow-2xl relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-10 opacity-[0.03] pointer-events-none">
+                <i class="fas fa-stethoscope text-[12rem] rotate-12"></i>
+            </div>
+
+            <div class="flex justify-between items-center mb-10 relative z-10">
+                <h3 class="text-2xl font-black text-white uppercase italic tracking-tighter flex items-center">
+                    <i class="fas fa-hand-holding-medical text-blue-500 mr-4"></i> Clinical <span class="text-blue-500 ml-2">Vision</span>
+                </h3>
+                <span class="text-[9px] text-gray-500 font-black uppercase tracking-widest bg-white/5 px-4 py-1.5 rounded-xl border border-white/5">Top 07</span>
+            </div>
             
-            <div class="space-y-3" id="assistsListContainer">
-                <div class="flex text-[9px] uppercase font-black text-gray-600 px-4 mb-2 tracking-[0.2em]">
-                    <div class="w-12 text-center">Pos</div>
-                    <div class="flex-grow">Creative Node</div>
-                    <div class="w-12 text-right">A</div>
+            <div class="space-y-3 relative z-10" id="assistsListContainer">
+                <div class="flex text-[9px] uppercase font-black text-gray-600 px-5 mb-4 tracking-[0.2em]">
+                    <div class="w-10">POS</div>
+                    <div class="flex-grow">Personnel Identification</div>
+                    <div class="w-10 text-right">AST</div>
                 </div>
 
-                ${[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(i => `
-                    <div class="flex items-center p-4 bg-white/[0.03] rounded-[1.5rem] border border-white/5 group hover:border-blue-600/30 transition-all ${i > 6 ? 'hidden extra-assists animate-in' : ''}">
-                        <div class="w-12 font-black italic text-sm ${i <= 3 ? 'text-blue-500' : 'text-gray-600'} text-center">${i < 10 ? '0' + i : i}</div>
+                ${[1, 2, 3, 4, 5, 6, 7].map(i => `
+                    <div class="flex items-center p-5 bg-white/[0.02] rounded-[1.5rem] border border-white/5 group hover:border-blue-500/40 hover:bg-blue-600/[0.03] transition-all duration-300">
+                        <div class="w-10 font-black italic text-base ${i <= 3 ? 'text-blue-500' : 'text-gray-700'} group-hover:text-blue-400 transition-colors">
+                            0${i}
+                        </div>
+                        
                         <div class="flex-grow flex items-center space-x-4 px-2">
-                            <div class="w-8 h-8 rounded-full bg-zinc-800 border border-white/10 flex items-center justify-center relative">
-                                <i class="fas fa-brain text-[10px] text-gray-600"></i>
-                                ${i <= 5 ? '<i class="fas fa-certificate absolute -top-1 -right-1 text-[8px] text-blue-400 animate-pulse"></i>' : ''}
+                            <div class="w-11 h-11 rounded-2xl bg-blue-600/5 border border-blue-500/10 flex items-center justify-center relative group-hover:rotate-6 transition-transform">
+                                <i class="fas fa-id-card-alt text-[14px] text-blue-500/30"></i>
                             </div>
                             <div class="flex flex-col">
-                                <span class="text-xs font-black text-white uppercase tracking-tighter group-hover:text-blue-500 transition-colors">Pending_Roster</span>
-                                <span class="text-[8px] text-gray-600 font-bold uppercase tracking-widest italic">Awaiting Pass Data</span>
+                                <span class="text-sm font-black text-white uppercase tracking-tighter group-hover:text-blue-400 transition-colors">
+                                    Awaiting_Data
+                                </span>
+                                <span class="text-[9px] text-gray-600 font-black uppercase tracking-widest leading-none mt-1">
+                                    Clinical Node Assignment
+                                </span>
                             </div>
                         </div>
-                        <div class="w-12 text-right font-black italic text-white group-hover:scale-125 transition-transform">0</div>
+
+                        <div class="w-10 text-right font-black italic text-lg text-white group-hover:text-blue-500 transition-colors">
+                            --
+                        </div>
                     </div>
                 `).join('')}
             </div>
 
-            <button id="toggleAssistsBtn" onclick="toggleAssistsLeaderboard()" class="w-full mt-6 py-4 bg-white/5 border border-white/10 rounded-2xl text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 hover:text-white hover:bg-white/10 transition-all">
-                View Full Playmaker Stats (Top 10)
-            </button>
+            <div class="mt-8 flex items-center justify-center gap-4 py-4 bg-blue-600/5 rounded-2xl border border-blue-500/10">
+                <i class="fas fa-lock text-[10px] text-blue-500/40"></i>
+                <p class="text-[9px] text-gray-500 uppercase font-black tracking-widest leading-relaxed">
+                    Creative archives are <span class="text-white">Standby</span> for the Jan 2026 resumption
+                </p>
+            </div>
         </div>
 
     </div>
 </div>`,
+
+
+
+
+
 
 'Player Selection': `
 <div class="space-y-8 animate-in fade-in duration-500">
@@ -866,6 +908,10 @@ const contentData = {
     </div>
 </div>`,
 
+
+
+
+
 'Team Selection': `
 <div class="space-y-8 animate-in fade-in duration-500">
     <div class="bg-red-600/10 border border-red-600/20 p-6 rounded-[2rem]">
@@ -876,327 +922,505 @@ const contentData = {
     <div id="adminAssignmentGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         </div>
 </div>`,
-   
+
+
+
 'Transfer Market': `
-<div class="space-y-8 animate-in pb-12">
-    <div class="flex justify-between items-end">
+<div class="space-y-8 animate-in pb-12 px-2 md:px-0">
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
         <div>
-            <h3 class="text-3xl font-black italic uppercase tracking-tighter text-red-600">Market Terminal</h3>
-            <p class="text-gray-500 text-[10px] uppercase tracking-[0.2em] font-bold mt-1">Status: <span class="text-yellow-500 italic">Standby Mode</span></p>
+            <h3 class="text-3xl font-black italic uppercase tracking-tighter text-white">Transfer <span class="text-purple-500">Terminal</span></h3>
+            <p class="text-gray-500 text-[10px] uppercase tracking-[0.2em] font-bold mt-1">Status: <span class="text-purple-600 italic">Deep Freeze Protocol</span></p>
         </div>
-        <div class="hidden md:flex items-center gap-3">
-            <span class="text-[9px] text-gray-600 font-mono uppercase">Node: MKK-TRNSFR-03</span>
-            <div class="w-2 h-2 rounded-full bg-yellow-500 animate-pulse"></div>
+        <div class="flex items-center gap-3 bg-white/5 px-4 py-2 rounded-full border border-white/10">
+            <span class="text-[9px] text-gray-500 font-mono uppercase tracking-widest">Protocol: RESTRICTED</span>
+            <div class="w-2 h-2 rounded-full bg-purple-500 animate-pulse shadow-[0_0_10px_rgba(168,85,247,0.5)]"></div>
         </div>
     </div>
 
-    <div class="relative p-10 md:p-20 bg-[#0a0a0a] border border-white/5 rounded-[3rem] overflow-hidden flex flex-col items-center justify-center text-center">
-        <div class="absolute inset-0 opacity-20 pointer-events-none">
-            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(220,38,38,0.2)_0%,transparent_70%)]"></div>
-            <i class="fas fa-chart-line absolute -left-10 -bottom-10 text-[25rem] text-white/5 -rotate-12"></i>
+    <div class="relative p-10 md:p-20 bg-[#0a0a0c] border border-white/5 rounded-[2.5rem] md:rounded-[4rem] overflow-hidden flex flex-col items-center justify-center text-center shadow-2xl">
+        <div class="absolute inset-0 pointer-events-none opacity-[0.05]">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(168,85,247,0.15)_0%,transparent_70%)]"></div>
+            <i class="fas fa-snowflake absolute -right-20 -top-20 text-[25rem] text-white/10 -rotate-12"></i>
         </div>
 
         <div class="relative z-10 max-w-2xl">
-            <div class="w-24 h-24 bg-red-600 text-white rounded-3xl flex items-center justify-center mx-auto mb-10 rotate-12 shadow-[0_0_50px_rgba(220,38,38,0.3)] border-4 border-black">
-                <i class="fas fa-hand-holding-usd text-4xl -rotate-12"></i>
+            <div class="w-24 h-24 bg-purple-600/10 text-purple-500 rounded-[2rem] flex items-center justify-center mx-auto mb-10 shadow-inner border-2 border-purple-500/20">
+                <i class="fas fa-biohazard text-4xl"></i>
             </div>
             
-            <h4 class="text-4xl md:text-6xl font-black text-white italic tracking-tighter uppercase leading-none mb-6">
-                Market Opening <br>
-                <span class="text-red-600">Jan 18, 2026</span>
+            <h4 class="text-4xl md:text-6xl font-black text-white italic tracking-tighter uppercase leading-[0.9] mb-6">
+                Exchange <br>
+                <span class="text-purple-500">Suspended</span>
             </h4>
 
-            <div class="inline-block px-6 py-2 bg-white/5 border border-white/10 rounded-full mb-8">
-                <span class="text-[10px] text-gray-400 font-black uppercase tracking-[0.4em]">Stay Tuned Managers</span>
+            <div class="inline-block px-8 py-2 bg-purple-600/10 border border-purple-500/20 rounded-full mb-8">
+                <span class="text-[9px] text-purple-400 font-black uppercase tracking-[0.4em]">Pending Board Resolution</span>
             </div>
 
-            <p class="text-sm md:text-lg text-gray-400 font-bold uppercase leading-relaxed tracking-wide mb-10">
-                "Make your <span class="text-white">money worth the buy</span> and your <span class="text-red-600">pocket worth the sale</span>. Build a dynasty or cash out—the choice is yours."
+            <p class="text-sm md:text-lg text-gray-500 font-bold uppercase leading-relaxed tracking-wide mb-10 max-w-md mx-auto">
+                Transfer protocols are currently <span class="text-white italic">Not Required</span> for the Provost Sector. Node activation awaits <span class="text-purple-500">Clinical Confirmation</span> from the Board.
             </p>
 
-            <div class="flex flex-wrap justify-center gap-4">
-                <div class="px-5 py-3 bg-red-600/10 border border-red-600/30 rounded-2xl">
-                    <span class="block text-[8px] text-red-500 font-black uppercase mb-1">Buy Logic</span>
-                    <span class="text-xs text-white font-black uppercase italic">Value Driven</span>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <div class="px-6 py-4 bg-white/[0.03] border border-white/5 rounded-2xl flex items-center gap-3">
+                    <i class="fas fa-lock text-purple-900/40 text-xs"></i>
+                    <span class="text-[10px] text-gray-500 font-black uppercase tracking-widest italic">Market Logic: Encrypted</span>
                 </div>
-                <div class="px-5 py-3 bg-white/5 border border-white/10 rounded-2xl">
-                    <span class="block text-[8px] text-gray-500 font-black uppercase mb-1">Sell Logic</span>
-                    <span class="text-xs text-white font-black uppercase italic">Profit Focus</span>
+                <div class="px-6 py-4 bg-white/[0.03] border border-white/5 rounded-2xl flex items-center gap-3">
+                    <i class="fas fa-microchip text-purple-900/40 text-xs"></i>
+                    <span class="text-[10px] text-gray-500 font-black uppercase tracking-widest italic">Trade Node: Offline</span>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="p-8 bg-zinc-900/50 border border-white/5 rounded-[2rem] group hover:border-red-600/30 transition-all">
-            <i class="fas fa-user-check text-red-600 mb-4"></i>
-            <h5 class="text-white font-black uppercase italic text-sm mb-2">Verified Units</h5>
-            <p class="text-[10px] text-gray-500 font-bold uppercase leading-relaxed">Only managers who have secured their franchise slots (₦4,000) can participate in the open market.</p>
+        <div class="p-8 bg-[#0a0a0c] border border-white/5 rounded-[2rem] group hover:border-purple-600/30 transition-all shadow-xl">
+            <div class="w-10 h-10 bg-purple-600/10 rounded-xl flex items-center justify-center mb-6 border border-purple-500/10">
+                <i class="fas fa-vial text-purple-500 text-sm"></i>
+            </div>
+            <h5 class="text-white font-black uppercase italic text-sm mb-3">Calibration Phase</h5>
+            <p class="text-[10px] text-gray-500 font-bold uppercase leading-relaxed">
+                Personnel movement is restricted until the conclusion of the 2025/2026 Board session. No trades are authorized at this time.
+            </p>
         </div>
 
-        <div class="p-8 bg-zinc-900/50 border border-white/5 rounded-[2rem] group hover:border-red-600/30 transition-all">
-            <i class="fas fa-coins text-red-600 mb-4"></i>
-            <h5 class="text-white font-black uppercase italic text-sm mb-2">Trade Protocol</h5>
-            <p class="text-[10px] text-gray-500 font-bold uppercase leading-relaxed">Direct player-to-player swaps and cash-plus-player deals will be facilitated by the Committee.</p>
+        <div class="p-8 bg-[#0a0a0c] border border-white/5 rounded-[2rem] group hover:border-blue-500/30 transition-all shadow-xl">
+            <div class="w-10 h-10 bg-blue-600/10 rounded-xl flex items-center justify-center mb-6 border border-blue-500/10">
+                <i class="fas fa-shield-halved text-blue-500 text-sm"></i>
+            </div>
+            <h5 class="text-white font-black uppercase italic text-sm mb-3">Board Integrity</h5>
+            <p class="text-[10px] text-gray-500 font-bold uppercase leading-relaxed">
+                Transfer logic will only be implemented if the Provost Board confirms the necessity for elite-level functions.
+            </p>
         </div>
 
-        <div class="p-8 bg-zinc-900/50 border border-white/5 rounded-[2rem] group hover:border-red-600/30 transition-all">
-            <i class="fas fa-file-contract text-red-600 mb-4"></i>
-            <h5 class="text-white font-black uppercase italic text-sm mb-2">Finalization</h5>
-            <p class="text-[10px] text-gray-400 font-bold uppercase leading-relaxed italic">"Everything regarding the league collectively comes from the Committee."</p>
+        <div class="p-8 bg-[#0a0a0c] border border-white/5 rounded-[2rem] group hover:border-purple-600/30 transition-all shadow-xl">
+            <div class="w-10 h-10 bg-white/5 rounded-xl flex items-center justify-center mb-6 border border-white/10">
+                <i class="fas fa-file-medical text-gray-400 text-sm"></i>
+            </div>
+            <h5 class="text-white font-black uppercase italic text-sm mb-3">Official Directive</h5>
+            <p class="text-[10px] text-gray-500 font-bold uppercase leading-relaxed italic">
+                "Everything regarding the league collectively comes from the Committee."
+            </p>
         </div>
     </div>
 </div>`,
-    
-   'Mikoko Payment': `
-<div class="space-y-8 animate-in pb-12">
-    <div class="flex justify-between items-end">
-        <div>
-            <h3 class="text-3xl font-black italic uppercase tracking-tighter text-red-600">Financial Node</h3>
-            <p class="text-gray-500 text-[10px] uppercase tracking-[0.2em] font-bold mt-1">Status: <span class="text-green-500">Payment Channels Active</span></p>
+
+
+
+'Transfer News': `
+<div class="animate-in pb-40 px-4 md:px-16 space-y-12 md:space-y-16">
+    <div class="pt-10 flex flex-col gap-6">
+        <div class="flex items-center gap-3">
+            <div class="h-[2px] w-8 bg-purple-500"></div>
+            <span class="text-[9px] text-purple-500 font-black uppercase tracking-[0.6em]">Clinical Protocol</span>
         </div>
-        <i class="fas fa-file-invoice-dollar text-red-600 opacity-20 text-3xl"></i>
+        <h3 class="text-5xl md:text-8xl font-black italic uppercase tracking-tighter text-white leading-[0.85]">
+            Transfer <br><span class="text-transparent stroke-purple-500" style="-webkit-text-stroke: 1px #a855f7;">Intel</span>
+        </h3>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div class="p-6 bg-red-600/10 border border-red-600/20 rounded-3xl">
-            <span class="text-[9px] text-red-600 font-black uppercase tracking-widest">Franchise Fee</span>
-            <h4 class="text-2xl font-black text-white italic uppercase">₦4,000</h4>
-            <p class="text-[10px] text-gray-400 font-bold uppercase mt-1">To Own, Name, & Coach a Team</p>
+    <div class="flex flex-col lg:flex-row gap-12 lg:gap-20">
+        
+        <div class="lg:w-1/3">
+            <div class="relative bg-[#0a0a0c] border border-purple-500/10 rounded-[3rem] md:rounded-[4rem] p-8 md:p-12 shadow-2xl overflow-hidden">
+                <div class="absolute -top-20 -right-20 w-40 h-40 bg-purple-600/5 rounded-full blur-3xl"></div>
+                
+                <div class="w-16 h-16 bg-purple-600/10 rounded-2xl flex items-center justify-center mb-10 border border-purple-500/20 shadow-inner">
+                    <i class="fas fa-microscope text-2xl text-purple-500 animate-pulse"></i>
+                </div>
+
+                <h4 class="text-3xl font-black text-white uppercase tracking-tighter italic mb-6">System <span class="text-purple-500 font-normal">Sync</span></h4>
+                
+                <div class="inline-block px-5 py-2 bg-purple-950/30 border border-purple-500/20 rounded-xl mb-12">
+                    <span class="text-[10px] text-purple-400 font-black uppercase tracking-widest italic leading-none">Awaiting Board Validation</span>
+                </div>
+
+                <div class="space-y-10">
+                    <div class="flex items-start gap-5">
+                        <div class="min-w-[4px] h-4 bg-purple-500 rounded-full mt-1"></div>
+                        <p class="text-[11px] text-gray-500 font-bold uppercase tracking-widest italic leading-relaxed">
+                            Transfer window is <span class="text-white underline underline-offset-4 decoration-purple-500">Currently Offline</span>.
+                        </p>
+                    </div>
+                    <div class="flex items-start gap-5">
+                        <div class="min-w-[4px] h-4 bg-purple-600/30 rounded-full mt-1"></div>
+                        <p class="text-[11px] text-gray-600 font-bold uppercase tracking-widest italic leading-relaxed">
+                            Elite League functions <span class="text-purple-900 italic">Not Required</span> for Provost sector at this stage.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="p-6 bg-white/5 border border-white/10 rounded-3xl">
-            <span class="text-[9px] text-gray-400 font-black uppercase tracking-widest">Player Fee</span>
-            <h4 class="text-2xl font-black text-white italic uppercase">₦2,000</h4>
-            <p class="text-[10px] text-gray-400 font-bold uppercase mt-1">To Register for the Draft Pool</p>
+
+        <div class="lg:w-2/3 space-y-8 md:space-y-10">
+            <div class="flex justify-between items-center mb-4 px-2">
+                <span class="text-[9px] text-purple-400 font-black uppercase tracking-[0.4em]">Official Intelligence</span>
+                <span class="text-[9px] text-gray-800 font-mono uppercase tracking-widest">Auth: Provost_Coordinators</span>
+            </div>
+
+            <div class="p-8 md:p-14 bg-white/[0.01] border border-white/5 rounded-[3rem] md:rounded-[4rem] hover:border-purple-500/20 transition-all duration-700 group">
+                <div class="flex items-center gap-6 mb-8">
+                    <span class="text-4xl font-black italic text-purple-500/10 font-mono group-hover:text-purple-500/30 transition-colors">01</span>
+                    <h5 class="text-2xl md:text-3xl font-black text-white uppercase italic tracking-tighter">Market <span class="text-purple-500">Restriction</span></h5>
+                </div>
+                <p class="text-gray-500 text-xs md:text-sm font-bold uppercase leading-[2] tracking-widest italic">
+                    All transfer activities are <span class="text-white font-black">Suspended</span>. Personnel must remain with their designated units until the <span class="text-purple-500 italic">Provost Board</span> concludes its 2026 calibration session.
+                </p>
+            </div>
+
+            <div class="p-8 md:p-14 bg-white/[0.01] border border-white/5 rounded-[3rem] md:rounded-[4rem] hover:border-blue-500/20 transition-all duration-700 group">
+                <div class="flex items-center gap-6 mb-8">
+                    <span class="text-4xl font-black italic text-blue-500/10 font-mono group-hover:text-blue-500/30 transition-colors">02</span>
+                    <h5 class="text-2xl md:text-3xl font-black text-white uppercase italic tracking-tighter">Unit <span class="text-blue-500">Integrity</span></h5>
+                </div>
+                <p class="text-gray-500 text-xs md:text-sm font-bold uppercase leading-[2] tracking-widest italic">
+                    The focus remains on <span class="text-white italic">Internal Unit Strength</span>. Cross-department movements are not authorized. Any movement logs detected without <span class="text-blue-500 underline underline-offset-8">Coordinator Approval</span> will be voided.
+                </p>
+            </div>
+
+            <div class="py-16 md:py-24 bg-[#0a0a0c] border border-dashed border-purple-500/10 rounded-[3rem] md:rounded-[4rem] flex flex-col items-center text-center px-10 relative overflow-hidden">
+                <div class="absolute inset-0 bg-purple-500/5 animate-pulse"></div>
+                <div class="relative z-10">
+                    <div class="w-12 h-12 bg-purple-500/5 rounded-full flex items-center justify-center mx-auto mb-8">
+                        <i class="fas fa-dna text-purple-500/20 text-2xl animate-spin-slow"></i>
+                    </div>
+                    <p class="text-gray-700 text-[10px] font-black uppercase tracking-[0.5em] leading-loose max-w-xs mx-auto">
+                        Biological Signal Stable // No authorized deal logs detected in this sector...
+                    </p>
+                </div>
+            </div>
+
+            <div class="pt-6 text-center">
+                <p class="text-[8px] text-gray-800 font-black uppercase tracking-[0.8em]">
+                    Provost Security Protocol Active // System Locked by Coordinators
+                </p>
+            </div>
+        </div>
+    </div>
+</div>`,
+
+
+
+'Mikoko Payment': `
+<div class="space-y-8 animate-in pb-12 px-2 md:px-0">
+    <div class="flex justify-between items-end gap-4">
+        <div>
+            <h3 class="text-3xl font-black italic uppercase tracking-tighter text-white">Clinical <span class="text-purple-500">Terminal</span></h3>
+            <p class="text-gray-500 text-[10px] uppercase tracking-[0.2em] font-bold mt-1">Status: <span class="text-emerald-500 italic font-black">Procedures Confirmed</span></p>
+        </div>
+        <div class="w-12 h-12 bg-purple-600/10 rounded-2xl flex items-center justify-center border border-purple-500/20 shadow-lg">
+            <i class="fas fa-file-invoice-dollar text-purple-500 text-xl"></i>
+        </div>
+    </div>
+
+    <div class="relative p-8 md:p-12 bg-[#0a0a0c] border border-white/5 rounded-[3rem] overflow-hidden shadow-2xl">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(168,85,247,0.08)_0%,transparent_50%)] pointer-events-none"></div>
+        
+        <div class="flex flex-col md:flex-row items-center gap-10 relative z-10">
+            <div class="w-32 h-32 md:w-40 md:h-40 bg-purple-600/5 border border-purple-500/20 rounded-full flex flex-col items-center justify-center text-center p-4">
+                <span class="text-[8px] text-purple-500 font-black uppercase tracking-widest mb-1">Per Team</span>
+                <span class="text-3xl font-black text-white italic leading-none">30K</span>
+                <span class="text-[8px] text-gray-600 font-bold uppercase mt-2">Contribution</span>
+            </div>
+
+            <div class="flex-1 text-center md:text-left">
+                <h4 class="text-2xl md:text-3xl font-black text-white italic uppercase tracking-tighter mb-4">Board <span class="text-purple-500 font-normal">Validation</span></h4>
+                <p class="text-[11px] md:text-xs text-gray-500 font-bold uppercase tracking-[0.1em] leading-relaxed mb-6">
+                    The Provost Board has authorized a flat-rate contribution model for the 2026 session. Each of the <span class="text-white">06 Departmental Units</span> must facilitate a total contribution of <span class="text-purple-500">₦30,000</span> to initialize their roster status.
+                </p>
+                <div class="inline-flex items-center gap-4 px-6 py-2 bg-purple-600/10 border border-purple-500/20 rounded-full">
+                    <span class="text-[9px] text-purple-400 font-black uppercase tracking-[0.2em]">6 Teams Authorized</span>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <div class="p-8 bg-zinc-900/50 border border-white/10 rounded-[2.5rem] relative overflow-hidden">
+        <div class="p-8 bg-zinc-900/40 border border-white/10 rounded-[2.5rem] relative overflow-hidden group">
             <div class="relative z-10">
-                <span class="text-[9px] text-red-600 font-black uppercase tracking-[0.2em]">Transfer Protocol</span>
-                <h4 class="text-xl font-black text-white italic mt-2 mb-6 uppercase tracking-tighter">Account Information</h4>
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="px-3 py-1 bg-purple-600/20 text-purple-400 text-[8px] font-black uppercase tracking-widest rounded-md border border-purple-500/20">Protocol 02</span>
+                    <span class="text-[9px] text-gray-600 font-black uppercase tracking-widest italic">Clearance Path</span>
+                </div>
+                <h4 class="text-xl font-black text-white italic mb-6 uppercase tracking-tighter">Fulfillment Procedure</h4>
                 
                 <div class="space-y-4">
-                    <div class="p-4 bg-white/5 rounded-2xl border border-white/5">
-                        <p class="text-[9px] text-gray-500 uppercase font-bold">Bank Name</p>
-                        <p class="text-lg text-white font-black italic uppercase">OPAY</p>
+                    <div class="p-6 bg-black/40 rounded-2xl border border-white/5 flex flex-col gap-2 group-hover:border-purple-500/30 transition-all">
+                        <span class="text-[9px] text-purple-500 font-black uppercase tracking-widest leading-none">Primary Directive</span>
+                        <p class="text-xs text-gray-400 font-bold uppercase italic leading-relaxed">
+                            Payment accounts are <span class="text-white">not publicly listed</span> for security integrity.
+                        </p>
                     </div>
-                     <div class="p-4 bg-white/5 rounded-2xl border border-white/5">
-                        <p class="text-[9px] text-gray-500 uppercase font-bold">Account Name</p>
-                        <p class="text-lg text-white font-black italic uppercase">IBEKU TOCHUKWU</p>
-                    </div>
-                    <div class="p-4 bg-white/5 rounded-2xl border border-white/5">
-                        <p class="text-[9px] text-gray-500 uppercase font-bold">Account Number</p>
-                        <p class="text-2xl text-red-600 font-mono font-black tracking-tighter">7062959301</p>
+                    
+                    <div class="p-6 bg-purple-600/5 rounded-2xl border border-purple-500/10 flex flex-col gap-3">
+                        <span class="text-[9px] text-gray-500 font-black uppercase tracking-widest">Action Required</span>
+                        <p class="text-sm text-white font-black uppercase italic tracking-tight">
+                            Reach out directly to a <span class="text-purple-500">Board Coordinator</span> for transaction logs and fulfillment details.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="relative p-8 bg-[#0a0a0a] border border-red-600/20 rounded-[2.5rem] flex flex-col justify-center overflow-hidden">
+        <div class="relative p-8 bg-[#0a0a0c] border border-white/5 rounded-[2.5rem] flex flex-col justify-center overflow-hidden group">
+            <i class="fas fa-fingerprint absolute -right-10 -bottom-10 text-[15rem] text-white/[0.02] -rotate-12"></i>
+
             <div class="relative z-10">
-                <div class="w-12 h-12 bg-red-600/10 border border-red-600/30 rounded-xl flex items-center justify-center mb-6">
-                    <i class="fas fa-paper-plane text-red-600"></i>
+                <div class="w-12 h-12 bg-purple-600/10 border border-purple-500/20 rounded-xl flex items-center justify-center mb-6">
+                    <i class="fas fa-user-shield text-purple-500"></i>
                 </div>
-                <h4 class="text-white font-black uppercase italic text-xl tracking-tighter mb-4">Verification Steps</h4>
-                <ul class="space-y-4">
-                    <li class="flex gap-4">
-                        <span class="w-5 h-5 rounded-full bg-red-600 text-white text-[10px] flex items-center justify-center font-black">1</span>
-                        <p class="text-[10px] text-gray-400 font-bold uppercase leading-relaxed">Transfer the exact fee (₦2,000 or ₦4,000) to the account provided.</p>
-                    </li>
-                    <li class="flex gap-4">
-                        <span class="w-5 h-5 rounded-full bg-red-600 text-white text-[10px] flex items-center justify-center font-black">2</span>
-                        <p class="text-[10px] text-gray-400 font-bold uppercase leading-relaxed">Capture a clear screenshot of the successful transaction receipt.</p>
-                    </li>
-                    <li class="flex gap-4">
-                        <span class="w-5 h-5 rounded-full bg-red-600 text-white text-[10px] flex items-center justify-center font-black">3</span>
-                        <p class="text-[10px] text-white font-black uppercase leading-relaxed">Send the receipt directly to <span class="text-red-600">TOGA's DM</span> for manual validation.</p>
-                    </li>
-                </ul>
-                
-                <div class="mt-8 pt-6 border-t border-white/5">
-                    <p class="text-[9px] text-gray-600 font-mono uppercase italic">Note: Only payments verified by the Planning Committee are valid.</p>
+                <h4 class="text-white font-black uppercase italic text-xl tracking-tighter mb-6">Authorized Channels</h4>
+                <div class="space-y-6">
+                    <p class="text-[10px] text-gray-500 font-bold uppercase leading-relaxed italic">
+                        All contributions must be validated by the <span class="text-white">Board Planning Committee</span>. Ensure you receive a digital receipt from your coordinator once the ₦30,000 unit fee is cleared.
+                    </p>
+                    
+                    <div class="pt-6 border-t border-white/5 flex flex-col gap-2">
+                        <span class="text-[8px] text-gray-700 font-mono uppercase tracking-widest">Verified Coordinators:</span>
+                        <div class="flex gap-2">
+                            <span class="px-2 py-1 bg-white/5 text-[8px] text-gray-400 rounded uppercase font-bold">Provost Hub</span>
+                            <span class="px-2 py-1 bg-white/5 text-[8px] text-gray-400 rounded uppercase font-bold">Committee Lead</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="text-center pt-6 opacity-30">
+        <p class="text-[8px] text-white font-mono uppercase tracking-[0.5em]">Ref: PROVOST-CONTRIBUTION-2026</p>
     </div>
 </div>`,
+
+
+
+
+
+
    'Team Lab': `
-<div class="space-y-8 animate-in pb-12">
-    <div class="flex justify-between items-end">
+<div class="space-y-8 animate-in pb-12 px-2 md:px-0">
+    <div class="flex justify-between items-end gap-4">
         <div>
-            <h3 class="text-3xl font-black italic uppercase tracking-tighter text-red-600">Tactical Lab</h3>
-            <p class="text-gray-500 text-[10px] uppercase tracking-[0.2em] font-bold mt-1">Status: <span class="text-yellow-500 italic">Integration Pending</span></p>
+            <h3 class="text-3xl font-black italic uppercase tracking-tighter text-white">Clinical <span class="text-purple-500">Lab</span></h3>
+            <p class="text-gray-500 text-[10px] uppercase tracking-[0.2em] font-bold mt-1">Status: <span class="text-purple-900 italic font-black">Under Construction</span></p>
         </div>
-        <i class="fas fa-flask text-red-600 opacity-20 text-3xl"></i>
+        <div class="w-12 h-12 bg-purple-600/10 rounded-2xl flex items-center justify-center border border-purple-500/20">
+            <i class="fas fa-flask-vial text-purple-500 text-xl"></i>
+        </div>
     </div>
 
-    <div class="relative p-10 md:p-20 bg-[#0a0a0a] border border-white/5 rounded-[3rem] overflow-hidden flex flex-col items-center justify-center text-center">
+    <div class="relative p-10 md:p-20 bg-[#0a0a0c] border border-white/5 rounded-[3rem] md:rounded-[4rem] overflow-hidden flex flex-col items-center justify-center text-center shadow-2xl">
         <div class="absolute inset-0 opacity-10 pointer-events-none">
-            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(220,38,38,0.1)_0%,transparent_70%)]"></div>
-            <div class="absolute inset-10 border-2 border-white/5 rounded-full"></div>
-            <div class="absolute top-0 bottom-0 left-1/2 w-[1px] bg-white/5"></div>
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(168,85,247,0.1)_0%,transparent_70%)]"></div>
+            <div class="absolute inset-0" style="background-image: radial-gradient(circle, #ffffff05 1px, transparent 1px); background-size: 30px 30px;"></div>
+            <div class="absolute top-1/2 left-0 right-0 h-[1px] bg-purple-500/10"></div>
+            <div class="absolute left-1/2 top-0 bottom-0 w-[1px] bg-purple-500/10"></div>
         </div>
 
         <div class="relative z-10 max-w-md">
-            <div class="w-20 h-20 bg-zinc-900 border border-white/10 rounded-2xl flex items-center justify-center mx-auto mb-8 shadow-2xl">
-                <i class="fas fa-microchip text-red-600 text-3xl animate-pulse"></i>
+            <div class="w-20 h-20 bg-purple-600/5 border border-purple-500/20 rounded-[2rem] flex items-center justify-center mx-auto mb-10 shadow-inner group">
+                <i class="fas fa-tools text-purple-500 text-3xl animate-bounce"></i>
             </div>
             
-            <h4 class="text-2xl font-black text-white italic uppercase tracking-tighter mb-4">
-                Digital Board <br>
-                <span class="text-red-600">Offline</span>
+            <h4 class="text-3xl md:text-4xl font-black text-white italic uppercase tracking-tighter leading-none mb-6">
+                Engineers <br>
+                <span class="text-purple-500">At Work</span>
             </h4>
 
-            <p class="text-[11px] text-gray-500 font-bold uppercase leading-relaxed tracking-widest mb-10">
-                The interactive tactical suite is currently being synchronized with the MIKOKO Main Node. Manual drag-and-drop formations and shareable links will be <span class="text-white">available in the next update</span>.
+            <p class="text-[11px] md:text-xs text-gray-500 font-bold uppercase leading-relaxed tracking-[0.2em] mb-10 italic">
+                The <span class="text-white">Tactical Lab Engine</span> is currently being rebuilt. Our engineers are finalizing the <span class="text-purple-500">Surgical Formation</span> logic to allow drag-and-drop department units.
             </p>
 
-            <div class="inline-flex items-center gap-3 px-6 py-3 bg-white/5 border border-white/10 rounded-2xl">
-                <div class="w-2 h-2 rounded-full bg-yellow-500"></div>
-                <span class="text-[9px] text-gray-400 font-black uppercase tracking-[0.2em]">Check back after Season 03 Protocol Initialization</span>
+            <div class="inline-flex items-center gap-3 px-8 py-4 bg-purple-600/5 border border-purple-500/10 rounded-2xl">
+                <div class="w-2 h-2 rounded-full bg-purple-500 animate-ping"></div>
+                <span class="text-[9px] text-gray-400 font-black uppercase tracking-[0.3em]">Codebase Syncing... 2026 Ready</span>
             </div>
         </div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 opacity-50">
-        <div class="p-6 bg-zinc-900/50 border border-dashed border-white/10 rounded-3xl flex items-center gap-6">
-            <div class="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center">
-                <i class="fas fa-layer-group text-gray-600"></i>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="p-8 bg-zinc-900/40 border border-white/5 rounded-[2.5rem] flex items-center gap-6 relative overflow-hidden group">
+             <div class="absolute -right-4 -bottom-4 text-purple-500/5 text-6xl rotate-12 group-hover:rotate-0 transition-transform">
+                <i class="fas fa-chess-pawn"></i>
             </div>
-            <div>
-                <p class="text-[9px] text-red-600 font-black uppercase tracking-widest">Upcoming</p>
-                <p class="text-xs text-white font-bold uppercase">Dynamic 5-11 Man Logic</p>
+            <div class="w-14 h-14 rounded-2xl bg-purple-600/10 flex items-center justify-center border border-purple-500/20">
+                <i class="fas fa-layer-group text-purple-500"></i>
             </div>
-        </div>
-        <div class="p-6 bg-zinc-900/50 border border-dashed border-white/10 rounded-3xl flex items-center gap-6">
-            <div class="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center">
-                <i class="fas fa-camera text-gray-600"></i>
-            </div>
-            <div>
-                <p class="text-[9px] text-red-600 font-black uppercase tracking-widest">Upcoming</p>
-                <p class="text-xs text-white font-bold uppercase">Tactical Screenshot Export</p>
+            <div class="relative z-10">
+                <p class="text-[9px] text-purple-500 font-black uppercase tracking-widest mb-1">Status: Dev</p>
+                <p class="text-sm text-white font-black uppercase italic tracking-tighter">Clinical 5-Man Logic</p>
             </div>
         </div>
+
+        <div class="p-8 bg-zinc-900/40 border border-white/5 rounded-[2.5rem] flex items-center gap-6 relative overflow-hidden group">
+            <div class="absolute -right-4 -bottom-4 text-blue-500/5 text-6xl rotate-12 group-hover:rotate-0 transition-transform">
+                <i class="fas fa-download"></i>
+            </div>
+            <div class="w-14 h-14 rounded-2xl bg-blue-600/10 flex items-center justify-center border border-blue-500/20">
+                <i class="fas fa-file-export text-blue-500"></i>
+            </div>
+            <div class="relative z-10">
+                <p class="text-[9px] text-blue-500 font-black uppercase tracking-widest mb-1">Status: Dev</p>
+                <p class="text-sm text-white font-black uppercase italic tracking-tighter">Tactical Blueprint Export</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center pt-6 opacity-30">
+        <p class="text-[8px] text-white font-mono uppercase tracking-[0.5em]">System Architecture: Provost-X-Engine</p>
     </div>
 </div>`,
+
+
+
     
-   'Pure Stream': `
-<div class="space-y-8 animate-in pb-12">
-    <div class="flex justify-between items-end">
+  'Pure Stream': `
+<div class="space-y-8 animate-in pb-12 px-2 md:px-0">
+    <div class="flex justify-between items-end gap-4">
         <div>
-            <h3 class="text-3xl font-black italic uppercase tracking-tighter text-red-600">Pure Stream</h3>
-            <p class="text-gray-500 text-[10px] uppercase tracking-[0.2em] font-bold mt-1">Status: <span class="text-zinc-600">Signal Offline</span></p>
+            <h3 class="text-3xl font-black italic uppercase tracking-tighter text-white">Clinical <span class="text-purple-500">Feed</span></h3>
+            <p class="text-gray-500 text-[10px] uppercase tracking-[0.2em] font-bold mt-1">Status: <span class="text-purple-900 italic font-black">Signal Offline</span></p>
         </div>
-        <i class="fas fa-satellite text-red-600 opacity-20 text-3xl"></i>
+        <div class="w-12 h-12 bg-purple-600/10 rounded-2xl flex items-center justify-center border border-purple-500/20 shadow-lg">
+            <i class="fas fa-satellite-dish text-purple-500 text-xl"></i>
+        </div>
     </div>
 
-    <div class="relative aspect-video bg-[#0a0a0a] rounded-[3rem] border border-white/5 overflow-hidden group">
-        <div class="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://media.giphy.com/media/oEI9uWUicGLeU/giphy.gif')] bg-cover"></div>
+    <div class="relative aspect-video bg-[#050505] rounded-[2.5rem] md:rounded-[4rem] border border-white/5 overflow-hidden group shadow-2xl">
+        <div class="absolute inset-0 opacity-[0.04] pointer-events-none mix-blend-screen bg-[url('https://media.giphy.com/media/oEI9uWUicGLeU/giphy.gif')] bg-cover"></div>
         
-        <div class="absolute inset-0 flex flex-col items-center justify-center z-10 text-center p-6">
-            <div class="w-20 h-20 bg-white/5 border border-white/10 rounded-full flex items-center justify-center mb-6 relative">
-                <i class="fas fa-video-slash text-gray-600 text-2xl"></i>
-                <div class="absolute inset-0 rounded-full border-2 border-red-600/20 animate-ping"></div>
+        <div class="absolute inset-0 pointer-events-none bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.25)_50%),linear-gradient(90deg,rgba(255,0,0,0.02),rgba(0,255,0,0.01),rgba(0,0,255,0.02))] z-10 bg-[length:100%_4px,3px_100%]"></div>
+
+        <div class="absolute inset-0 flex flex-col items-center justify-center z-20 text-center p-8">
+            <div class="w-20 h-20 bg-purple-600/5 border border-purple-500/20 rounded-full flex items-center justify-center mb-8 relative">
+                <i class="fas fa-video-slash text-purple-900 text-2xl"></i>
+                <div class="absolute inset-0 rounded-full border border-purple-500/30 animate-ping"></div>
             </div>
             
-            <h4 class="text-white font-black uppercase italic tracking-widest text-lg mb-2">Broadcasting Protocol Locked</h4>
-            <p class="text-gray-500 text-[10px] font-bold uppercase max-w-xs leading-relaxed">
-                Visual downlink is currently disabled. High-definition match streams and highlight reels will be <span class="text-red-600">deployed in the next update</span>.
+            <h4 class="text-white font-black uppercase italic tracking-[0.2em] text-xl mb-4">Broadcasting <span class="text-purple-500">Locked</span></h4>
+            <p class="text-gray-500 text-[10px] md:text-xs font-bold uppercase max-w-sm leading-relaxed tracking-widest italic">
+                Visual downlink is currently <span class="text-white">Under Maintenance</span>. Engineers are synchronizing the media node for the <span class="text-purple-500 italic">Provost Command Center</span>.
             </p>
         </div>
 
-        <div class="absolute bottom-8 left-8 right-8 flex justify-between items-center z-20 opacity-20">
+        <div class="absolute top-8 left-8 flex items-center gap-3 z-30 opacity-40">
+            <div class="w-2 h-2 rounded-full bg-purple-600 animate-pulse"></div>
+            <span class="text-[8px] text-white font-mono uppercase tracking-[0.3em]">REC: STANDBY</span>
+        </div>
+
+        <div class="absolute bottom-8 left-8 right-8 flex justify-between items-center z-30 opacity-20">
             <div class="flex items-center gap-3">
                 <div class="w-2 h-2 rounded-full bg-gray-600"></div>
-                <span class="text-[8px] text-gray-400 font-black uppercase tracking-widest">Feed: MKK-LIVE-NULL</span>
+                <span class="text-[8px] text-gray-400 font-black uppercase tracking-widest font-mono">Channel: PRVST-LIVE-01</span>
             </div>
-            <div class="flex gap-4">
+            <div class="hidden md:flex gap-4">
                 <div class="w-8 h-1 bg-white/10 rounded-full"></div>
-                <div class="w-12 h-1 bg-white/10 rounded-full"></div>
+                <div class="w-16 h-1 bg-purple-500/20 rounded-full"></div>
             </div>
         </div>
     </div>
 
-    <div class="p-8 bg-zinc-900/50 border border-white/5 rounded-[2.5rem] flex flex-col md:flex-row items-center justify-between gap-6">
-        <div class="flex items-center gap-6">
-            <div class="w-12 h-12 bg-red-600/10 rounded-2xl flex items-center justify-center text-red-600">
-                <i class="fas fa-clock"></i>
+    <div class="p-8 bg-zinc-900/40 border border-white/5 rounded-[2.5rem] md:rounded-[3rem] flex flex-col md:flex-row items-center justify-between gap-8 transition-all hover:border-purple-500/20 group">
+        <div class="flex items-center gap-6 text-center md:text-left flex-col md:flex-row">
+            <div class="w-14 h-14 bg-purple-600/10 rounded-2xl flex items-center justify-center text-purple-500 border border-purple-500/20 shadow-inner group-hover:scale-110 transition-transform">
+                <i class="fas fa-microchip"></i>
             </div>
             <div>
-                <h5 class="text-white font-black uppercase italic text-sm">Synchronizing Media Node</h5>
-                <p class="text-[10px] text-gray-500 font-bold uppercase mt-1">Estimated Arrival: Season 03 Kick-off</p>
+                <h5 class="text-white font-black uppercase italic text-sm tracking-tight">Synchronizing Media Node</h5>
+                <p class="text-[10px] text-gray-500 font-bold uppercase mt-1 tracking-widest italic">Engineering Team: Final Calibration Phase</p>
             </div>
         </div>
-        <div class="px-6 py-2 border border-white/10 rounded-full">
-            <span class="text-[9px] text-gray-400 font-black uppercase tracking-widest">Protocol: 0.8.2-BETA</span>
+        
+        <div class="px-8 py-3 bg-white/5 border border-white/10 rounded-full flex items-center gap-3">
+            <span class="text-[9px] text-gray-500 font-black uppercase tracking-widest italic">Node: PROVOST-VEO-02</span>
         </div>
+    </div>
+
+    <div class="text-center pt-4">
+        <p class="text-[8px] text-gray-800 font-mono uppercase tracking-[0.5em] italic leading-loose">
+            Security Protocol 8.4.1-PRVST // Signal restricted to board members only
+        </p>
     </div>
 </div>`,
 
-    
+
+
+
 'Messages': `
 <div class="space-y-6 animate-in pb-12 px-1 md:px-0">
     <div class="flex justify-between items-end px-2 md:px-0">
         <div>
-            <h3 class="text-2xl md:text-3xl font-black italic uppercase tracking-tighter text-red-600">Comms Center</h3>
-            <p class="text-gray-500 text-[8px] md:text-[10px] uppercase tracking-[0.2em] font-bold mt-1">Status: <span class="text-green-500 italic">Encrypted Connection Stable</span></p>
+            <h3 class="text-2xl md:text-3xl font-black italic uppercase tracking-tighter text-white">Clinical <span class="text-purple-500">Comms</span></h3>
+            <p class="text-gray-500 text-[8px] md:text-[10px] uppercase tracking-[0.2em] font-bold mt-1">Status: <span class="text-purple-900 italic uppercase">Uplink Restricted</span></p>
         </div>
-        <i class="fas fa-shield-alt text-red-600 opacity-20 text-2xl md:text-3xl"></i>
+        <div class="w-10 h-10 bg-purple-600/10 rounded-xl flex items-center justify-center border border-purple-500/20 shadow-lg">
+            <i class="fas fa-satellite text-purple-500 text-lg"></i>
+        </div>
     </div>
 
-    <div class="bg-zinc-900/50 border border-white/5 rounded-[2rem] md:rounded-[2.5rem] p-3 md:p-10 min-h-[450px] md:min-h-[500px] flex flex-col relative overflow-hidden">
+    <div class="bg-[#0a0a0c] border border-white/5 rounded-[2.5rem] md:rounded-[3rem] p-4 md:p-10 min-h-[480px] md:min-h-[550px] flex flex-col relative overflow-hidden shadow-2xl">
         
+        <div class="absolute inset-0 pointer-events-none opacity-[0.02]">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(168,85,247,0.2)_0%,transparent_50%)]"></div>
+        </div>
+
         <div class="space-y-8 flex-1 relative z-10">
-            <div class="flex gap-2 md:gap-4 max-w-[95%] md:max-w-2xl">
-                <div class="w-8 h-8 rounded-lg bg-red-600 flex-shrink-0 flex items-center justify-center shadow-lg shadow-red-600/20">
-                    <i class="fas fa-robot text-white text-[10px]"></i>
+            <div class="flex gap-3 md:gap-4 max-w-[92%] md:max-w-xl">
+                <div class="w-9 h-9 rounded-xl bg-purple-600/10 border border-purple-500/20 flex-shrink-0 flex items-center justify-center shadow-inner">
+                    <i class="fas fa-microchip text-purple-500 text-xs"></i>
                 </div>
-                <div class="bg-white/5 border border-white/10 p-3 md:p-5 rounded-2xl rounded-tl-none">
-                    <span class="text-[7px] md:text-[9px] text-red-600 font-black uppercase tracking-widest block mb-1">System Admin // TOGA</span>
-                    <p class="text-[10px] md:text-xs text-gray-300 font-bold uppercase leading-snug md:leading-relaxed">
-                        Welcome to Season 03. All Team Owners must DM their receipts for <span class="text-white">Franchise Naming Rights</span>.
+                <div class="bg-white/[0.03] border border-white/10 p-4 md:p-6 rounded-[1.8rem] rounded-tl-none">
+                    <span class="text-[7px] md:text-[9px] text-purple-500 font-black uppercase tracking-widest block mb-2">Provost Mainframe</span>
+                    <p class="text-[10px] md:text-xs text-gray-400 font-bold uppercase leading-relaxed italic">
+                        Node Activation: <span class="text-white">2026 Session</span>. All 06 Departmental Teams must synchronize with their <span class="text-purple-500">Board Coordinators</span> for contribution clearance.
                     </p>
-                    <div class="flex justify-between items-center mt-3 border-t border-white/5 pt-2">
-                         <span class="text-[6px] md:text-[8px] text-gray-600 font-mono uppercase">SENT: 18.12.2025</span>
-                         <i class="fas fa-check-double text-[8px] text-red-600 opacity-40"></i>
+                    <div class="flex justify-between items-center mt-4 border-t border-white/5 pt-3">
+                         <span class="text-[6px] md:text-[8px] text-gray-700 font-mono uppercase tracking-tighter">TIMESTAMP: 20.12.2025</span>
+                         <i class="fas fa-check-double text-[8px] text-purple-900"></i>
                     </div>
                 </div>
             </div>
 
-            <div class="flex gap-2 md:gap-4 max-w-[95%] md:max-w-2xl ml-auto flex-row-reverse">
-                <div class="w-8 h-8 rounded-lg bg-white/10 border border-white/10 flex-shrink-0 flex items-center justify-center">
-                    <i class="fas fa-users text-white text-[10px]"></i>
+            <div class="flex gap-3 md:gap-4 max-w-[92%] md:max-w-xl ml-auto flex-row-reverse">
+                <div class="w-9 h-9 rounded-xl bg-purple-600/20 border border-purple-500/30 flex-shrink-0 flex items-center justify-center">
+                    <i class="fas fa-gavel text-white text-xs"></i>
                 </div>
-                <div class="bg-red-600/10 border border-red-600/20 p-3 md:p-5 rounded-2xl rounded-tr-none text-right">
-                    <span class="text-[7px] md:text-[9px] text-gray-400 font-black uppercase tracking-widest block mb-1">League Committee</span>
-                    <p class="text-[10px] md:text-xs text-gray-300 font-bold uppercase leading-snug md:leading-relaxed">
-                        Registration for the draft pool is at ₦2,000. Have your ID ready for Jan 18th.
+                <div class="bg-purple-600/5 border border-purple-500/10 p-4 md:p-6 rounded-[1.8rem] rounded-tr-none text-right shadow-2xl">
+                    <span class="text-[7px] md:text-[9px] text-gray-500 font-black uppercase tracking-widest block mb-2">Planning Committee</span>
+                    <p class="text-[10px] md:text-xs text-gray-300 font-bold uppercase leading-relaxed">
+                        Team Contribution set at <span class="text-white">₦30,000</span>. Please ensure unit heads are briefed on clinical standards.
                     </p>
-                    <div class="flex justify-between flex-row-reverse items-center mt-3 border-t border-red-600/10 pt-2">
-                        <span class="text-[6px] md:text-[8px] text-gray-600 font-mono uppercase">SENT: 18.12.2025</span>
-                        <i class="fas fa-shield text-[8px] text-gray-600"></i>
+                    <div class="flex justify-between flex-row-reverse items-center mt-4 border-t border-purple-500/10 pt-3">
+                        <span class="text-[6px] md:text-[8px] text-gray-700 font-mono uppercase tracking-tighter">SENT: BY_COORDINATOR</span>
+                        <i class="fas fa-shield-virus text-[8px] text-purple-900"></i>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="mt-auto pt-6">
-            <div class="bg-black/60 rounded-[1.5rem] border border-dashed border-white/10 p-4 md:p-8 text-center">
-                <div class="inline-flex items-center gap-2 mb-2">
-                    <span class="w-1.5 h-1.5 rounded-full bg-red-600 animate-pulse"></span>
-                    <h5 class="text-white font-black uppercase italic text-[9px] md:text-[11px] tracking-widest">Broadcast Only Mode</h5>
+            <div class="bg-black/40 rounded-[2rem] border border-dashed border-white/10 p-6 md:p-8 text-center relative group">
+                <div class="absolute inset-0 bg-purple-500/[0.01] rounded-[2rem] animate-pulse"></div>
+                <div class="relative z-10">
+                    <div class="inline-flex items-center gap-2 mb-3">
+                        <i class="fas fa-wrench text-[10px] text-purple-900 animate-spin-slow"></i>
+                        <h5 class="text-white font-black uppercase italic text-[9px] md:text-[10px] tracking-[0.3em]">Engineering Mode Active</h5>
+                    </div>
+                    <p class="text-gray-600 text-[8px] md:text-[9px] font-bold uppercase leading-relaxed max-w-[200px] mx-auto">
+                        Interactive messaging is <span class="text-purple-500">Not Yet Ready</span>. Downlink will be established post-update.
+                    </p>
                 </div>
-                <p class="text-gray-600 text-[8px] md:text-[9px] font-bold uppercase leading-tight">
-                    Direct messaging enabled in <span class="text-red-600">v2.0 Update</span>.
-                </p>
             </div>
         </div>
     </div>
 
-    <div class="py-2 text-center">
-        <p class="text-[6px] md:text-[8px] text-gray-700 uppercase font-black tracking-[0.4em]">MIKOKO SECURE UPLINK // NO UNAUTHORIZED ACCESS</p>
+    <div class="py-4 text-center">
+        <p class="text-[6px] md:text-[8px] text-gray-800 uppercase font-black tracking-[0.6em] italic leading-loose">
+            MIKOKO SECURE UPLINK // AUTH: PROVOST_COMMAND_001
+        </p>
     </div>
 </div>`,
 };
@@ -1337,29 +1561,72 @@ function renderLeagueSystem(mode) {
         const pending = players.filter(p => p.status === 'Pending');
         const active = players.filter(p => p.status === 'Confirmed');
 
-        mainDisplay.innerHTML = `
-            <div class="space-y-8 animate-in pb-10">
-                <div class="bg-zinc-900/80 p-6 md:p-8 rounded-[2rem] border border-white/5">
-                    <h3 class="text-white font-black uppercase italic mb-4">Registration Terminal</h3>
-                    <div class="flex flex-col md:flex-row gap-4">
-                        <input type="text" id="playerNameInput" placeholder="ENTER PLAYER NAME..." class="flex-1 bg-black/60 border border-white/10 rounded-2xl px-6 py-4 text-red-500 font-mono focus:outline-none focus:border-red-600">
-                        <button onclick="registerPlayer()" class="px-10 py-4 bg-red-600 text-white font-black uppercase italic rounded-2xl hover:bg-white hover:text-red-600 transition-all">Register</button>
+    mainDisplay.innerHTML = `
+            <div class="space-y-8 animate-in pb-10 px-2 md:px-0">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
+                    <div>
+                        <h3 class="text-3xl font-black italic uppercase tracking-tighter text-white">Personnel <span class="text-purple-500">Registry</span></h3>
+                        <p class="text-gray-500 text-[10px] uppercase tracking-[0.2em] font-bold mt-1">Status: <span class="text-purple-400 animate-pulse">System Lock // Calibration Active</span></p>
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    <div class="border border-white/5 rounded-[2.5rem] p-6 bg-black/40">
-                        <h4 class="text-yellow-500 font-black uppercase text-[10px] mb-4 tracking-widest">Awaiting Assignment (${pending.length})</h4>
-                        <div class="space-y-2 overflow-y-auto max-h-[450px] custom-scrollbar pr-2">
-                            ${pending.map(p => `<div class="p-4 bg-white/5 rounded-2xl flex justify-between items-center"><span class="text-white font-bold text-xs uppercase">${p.name}</span><i class="fas fa-clock text-yellow-500/20 text-xs"></i></div>`).join('') || '<p class="text-zinc-800 text-center py-10 font-black uppercase italic">No Pending Units</p>'}
+                <div class="bg-[#0a0a0c] p-8 md:p-12 rounded-[2.5rem] md:rounded-[3.5rem] border border-white/5 relative overflow-hidden shadow-2xl">
+                    <div class="absolute inset-0 pointer-events-none opacity-[0.03] flex items-center justify-center">
+                        <i class="fas fa-id-badge text-[20rem]"></i>
+                    </div>
+
+                    <div class="relative z-10 flex flex-col items-center text-center">
+                        <div class="w-20 h-20 bg-purple-600/10 rounded-full flex items-center justify-center border border-purple-500/20 mb-8 shadow-inner">
+                            <i class="fas fa-user-lock text-purple-500 text-2xl"></i>
+                        </div>
+                        
+                        <h4 class="text-2xl md:text-3xl font-black italic uppercase tracking-tighter text-white mb-4">Registration <span class="text-purple-500">Suspended</span></h4>
+                        <p class="text-gray-500 text-xs md:text-sm uppercase tracking-widest max-w-xl mx-auto leading-relaxed font-bold">
+                            The Player Selection terminal is currently <span class="text-white">Offline</span>. 
+                            The Provost Coordinators are finalizing the sector framework. Registration nodes will activate once the board concludes its session.
+                        </p>
+
+                        <div class="mt-10 w-full max-w-md flex flex-col md:flex-row gap-4 opacity-50 pointer-events-none">
+                            <div class="flex-1 bg-black/40 border border-white/10 rounded-2xl px-6 py-4 text-gray-700 font-mono text-xs text-left flex items-center gap-3 italic">
+                                <i class="fas fa-terminal text-[10px]"></i> ENTERING_DISABLED...
+                            </div>
+                            <div class="px-8 py-4 bg-purple-600/20 border border-purple-500/20 text-purple-900 font-black uppercase italic rounded-2xl text-[10px] tracking-widest">
+                                Locked
+                            </div>
                         </div>
                     </div>
-                    <div class="border border-white/5 rounded-[2.5rem] p-6 bg-black/40">
-                        <h4 class="text-emerald-500 font-black uppercase text-[10px] mb-4 tracking-widest">Active Roster (${active.length})</h4>
-                        <div class="space-y-2 overflow-y-auto max-h-[450px] custom-scrollbar pr-2">
-                            ${active.map(p => `<div class="p-4 bg-white/5 rounded-2xl flex justify-between items-center"><span class="text-white font-bold text-xs uppercase">${p.name}</span><span class="text-[8px] text-zinc-500 font-black uppercase border border-white/5 px-2 py-1 rounded italic">${p.team}</span></div>`).join('') || '<p class="text-zinc-800 text-center py-10 font-black uppercase italic">Roster Empty</p>'}
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="p-8 bg-white/[0.02] border border-white/5 rounded-[2rem] group hover:border-purple-600/30 transition-all">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-10 h-10 bg-purple-600/10 rounded-xl flex items-center justify-center border border-purple-500/10">
+                                <i class="fas fa-microscope text-purple-500 text-xs"></i>
+                            </div>
+                            <span class="text-[9px] text-gray-500 font-black uppercase tracking-widest">Sector Analysis</span>
                         </div>
+                        <h5 class="text-white font-black uppercase italic tracking-tighter text-lg mb-3">Board Conclusion Required</h5>
+                        <p class="text-gray-500 text-[10px] font-bold uppercase leading-relaxed">
+                            Personnel selection protocols are strictly dependent on the final board resolution. <span class="text-purple-400">Rosters remain frozen</span> until January 2026.
+                        </p>
                     </div>
+
+                    <div class="p-8 bg-white/[0.02] border border-white/5 rounded-[2rem] group hover:border-blue-500/30 transition-all">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-10 h-10 bg-blue-600/10 rounded-xl flex items-center justify-center border border-blue-500/10">
+                                <i class="fas fa-shield-virus text-blue-500 text-xs"></i>
+                            </div>
+                            <span class="text-[9px] text-gray-500 font-black uppercase tracking-widest">Data Integrity</span>
+                        </div>
+                        <h5 class="text-white font-black uppercase italic tracking-tighter text-lg mb-3">Integrity Shield Active</h5>
+                        <p class="text-gray-500 text-[10px] font-bold uppercase leading-relaxed">
+                            To ensure clinical accuracy across the <span class="text-blue-400">Medical and Nursing</span> sectors, all manual injections into the player database are blocked.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="text-center pt-4">
+                    <p class="text-[9px] text-gray-700 font-mono uppercase tracking-[0.4em] italic">Access Level: Level 01 // Restricted to Provost Coordinators Only</p>
                 </div>
             </div>`;
     }
